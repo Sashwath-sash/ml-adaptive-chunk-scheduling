@@ -8,3 +8,5 @@ add_repository_link.py
 output/*
 !output/OS_Review2_User_Edited_With_Module_Workflows.docx
 !output/OS_Review2_User_Edited_With_Module_Workflows.pdf
+!output/OS_Review2_Expanded_Report.docx
+!output/OS_Review2_Expanded_Report.pdf
