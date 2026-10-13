@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "raw_rows": 175,
+  "summary_rows": 35,
+  "decision_rows": 298,
+  "paired_groups": 25,
+  "checksums_equal": true,
+  "one_decision_per_ml_once_run": true,
+  "summary_medians_recomputed": true,
+  "source_and_data_sha256": {
+    "scheduler_v2.py": "3a837e3d5360cf0e40b19836e762e89e9ff5ddead3c78962dab5c3dc4da4dd8a",
+    "scheduler_v3.py": "b5341635160f497d53954c9862a69dfa3b14be2824be323bfd3750bc8c6186ab",
+    "experiment_improvement.py": "fe68a496bedbb1c06cd9013b77737de583680d72e8c6573180ed37cab76012bd",
+    "model.json": "0195b082d03b1141bd7b2d4fb1610800b1b3c4906ec0447d2b0eb829f2213595",
+    "raw.csv": "5caefd23b5396c9e42c171f900cb7a0d415dd54595bea90210a21850bb62188e",
+    "summary.csv": "c1855376d6d6eda02ddc977f6ae30eeb60ff1ca116d244b8ce2ae22115e75c31"
+  }
+}

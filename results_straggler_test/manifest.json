@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "system": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "seed_start": 8001,
+  "repeats": 10,
+  "workers": 2,
+  "count": 192,
+  "base": 1500000,
+  "spike_factor": 40,
+  "spike_position": "random among final 8 task slots",
+  "methods": [
+    "fixed_4",
+    "fixed_16",
+    "pool_map_16",
+    "balanced_8",
+    "balanced_16",
+    "balanced_32",
+    "balanced_fifo_16"
+  ],
+  "raw_rows": 70,
+  "dataset_rows": 1920,
+  "checksums_equal_within_pairs": true,
+  "timing_boundary": "end-to-end including pool startup, dispatch and teardown",
+  "purpose": "specific tail-straggler workload; not proof of universal speedup"
+}

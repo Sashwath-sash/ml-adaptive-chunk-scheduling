@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "raw_rows": 200,
+  "summary_rows": 40,
+  "training_rows": 150,
+  "decision_rows": 807,
+  "dataset_rows": 4800,
+  "paired_groups": 25,
+  "all_checksum_groups_equal": true,
+  "train_holdout_test_seeds_disjoint": true,
+  "summary_medians_recomputed": true,
+  "decision_counts_and_task_coverage_valid": true,
+  "existing_options_rows": 275,
+  "existing_options_checksums_and_medians_valid": true,
+  "source_and_result_sha256": {
+    "work_kernel.c": "5090e4db849530de5112be6dd4a2b6e790931e5e52b05653fc740baaeb94b7a2",
+    "workload.py": "db17e28981311bd38d1e24bd7e30d508c4fcc1b014bc067d49a4bb9b040738f5",
+    "tree.py": "e3d16cca0f8c635fb75250464daac4767d10cf978b8b754f4196b9577e851e5b",
+    "scheduler_v2.py": "3a837e3d5360cf0e40b19836e762e89e9ff5ddead3c78962dab5c3dc4da4dd8a",
+    "experiment_complete.py": "14a71659a63b4f88b20800ac478de1496b893fff2de782825de2dd708c88087f",
+    "model.json": "0195b082d03b1141bd7b2d4fb1610800b1b3c4906ec0447d2b0eb829f2213595",
+    "raw_results.csv": "afd4430ea6088ae7f6abe396e5a555d57d3c9597a8936110b28dab72cd753687",
+    "summary.csv": "025c91aca1feecc10790924456e174900e399caf027ce7bbdd3b0e2132eea8ce",
+    "compare_existing.py": "4880e88295be55bb3af9da161d896181dff586fa27eab841150ee6a3c785f06b",
+    "existing_options_raw.csv": "7bc79fb51aa0aee1c2eb627c5f6852a929981319a957d5d32450ad65f697eaea",
+    "existing_options_summary.csv": "ee85cd3d62912e26b4f492acd56a1f0602648d235415beca20da0316e2fced12"
+  }
+}

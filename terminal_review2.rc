@@ -1,0 +1,3 @@
+cd -L /mnt/c/Users/SASHWATH/Documentswork/review2-project
+export PS1='sash@Minato:\w\$ '
+export TERM=xterm-mono

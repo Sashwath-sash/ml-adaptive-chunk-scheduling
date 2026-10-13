@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "workloads": 5,
+  "repeats": 5,
+  "methods": 11,
+  "raw_rows": 275,
+  "summary_rows": 55,
+  "checksums_equal_within_each_group": true,
+  "comparison_scope": "same deterministic tasks and seeds; randomized method order; Python built-in APIs have different overhead paths",
+  "method_definitions": {
+    "pool_map_*": "multiprocessing.Pool.map(_one, chunksize=*)",
+    "imap_unordered_*": "multiprocessing.Pool.imap_unordered(_one, chunksize=*)",
+    "process_executor_*": "concurrent.futures.ProcessPoolExecutor.map(_one, chunksize=*)"
+  }
+}

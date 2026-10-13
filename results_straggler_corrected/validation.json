@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "raw_rows": 70,
+  "dataset_rows": 1920,
+  "paired_groups": 10,
+  "checksums_equal": true,
+  "one_late_spike_per_group": true,
+  "summary_medians_recomputed": true,
+  "selected_method": "balanced_32",
+  "selected_median_paired_ratio_to_fixed4": 0.8806559189909984,
+  "selected_beats_fixed4": true,
+  "source_and_data_sha256": {
+    "STRAGGLER_TEST_PLAN.md": "d79f3a2225ced54d92f80a04673f287161003df66e949e785427ee184a70923a",
+    "TIMING_CORRECTION_PLAN.md": "1f8dacd0a5c39f3c8f06c13710adc3dbb627e9a09152ef67433ed10b28b66197",
+    "straggler_workload.py": "62f640ab05e9337942966b0d6abe6bf2c3025544e76f1e458253601c2e0da3a6",
+    "scheduler_v4.py": "d37e419d16707d72f27040d3d486660e0135327931cb19d3047ec09d9f848fb3",
+    "experiment_straggler.py": "cb631577569cea0d7cab2bf2a3bd12d287abffc377ea73c0b6e54357d89fc492",
+    "dataset.csv": "824a1937c05c3f569d26b859e96c11119855e4bacf6c76e981a5fe06b58dd86e",
+    "raw.csv": "a33c336a58b6cc875344c8f313e0edbf5d72b539314262aa5db6ee70208d8308",
+    "summary.csv": "4c7ed48195bd1b2a100d52630492b6497cfea402f3d6043e5f18cad22d1df5ec"
+  }
+}

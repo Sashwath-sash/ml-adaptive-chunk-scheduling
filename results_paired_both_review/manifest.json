@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "system": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "workers": 2,
+  "task_count": 192,
+  "general_seeds": [
+    7001,
+    7002,
+    7003,
+    7004,
+    7005
+  ],
+  "late_heavy_seeds": [
+    11001,
+    11002,
+    11003,
+    11004,
+    11005,
+    11006,
+    11007,
+    11008,
+    11009,
+    11010
+  ],
+  "heavy_factor": 40,
+  "methods": [
+    "fixed_4",
+    "ml",
+    "balanced_32"
+  ],
+  "raw_rows": 105,
+  "all_checksums_equal_within_groups": true,
+  "timing": "end-to-end, including planning, pool startup, dispatch and teardown; model training excluded",
+  "method_order": "seeded shuffle within every group",
+  "primary_metric": "median within-seed wall-time ratio to fixed_4",
+  "scope": "one WSL2 machine; exploratory, not universal speedup"
+}

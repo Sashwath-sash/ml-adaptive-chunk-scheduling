@@ -1,0 +1,13 @@
+test_online_tree_decisions_and_latency_metrics (test_complete.CompleteProjectTests.test_online_tree_decisions_and_latency_metrics) ... ok
+test_prime_workload_deterministic_and_checksums (test_complete.CompleteProjectTests.test_prime_workload_deterministic_and_checksums) ... ok
+test_training_features_match_pilot_boundary (test_complete.CompleteProjectTests.test_training_features_match_pilot_boundary) ... ok
+test_one_decision_matches_fixed_checksum (test_improvement.ImprovementTests.test_one_decision_matches_fixed_checksum) ... ok
+test_rejects_missing_model (test_improvement.ImprovementTests.test_rejects_missing_model) ... ok
+test_all_methods_compute_same_result (test_project.ProjectTests.test_all_methods_compute_same_result) ... ok
+test_generator_reproducible_and_phase_shifted (test_project.ProjectTests.test_generator_reproducible_and_phase_shifted) ... ok
+test_tree_learns_simple_split_and_serializes (test_project.ProjectTests.test_tree_learns_simple_split_and_serializes) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.434s
+
+OK

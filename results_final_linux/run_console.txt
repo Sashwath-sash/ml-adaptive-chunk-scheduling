@@ -1,0 +1,36 @@
+PROFILE train   uniform     rows=18
+PROFILE train   moderate    rows=36
+PROFILE train   high        rows=54
+PROFILE train   phase_shift rows=72
+PROFILE train   prime_scan  rows=90
+PROFILE holdout uniform     rows=102
+PROFILE holdout moderate    rows=114
+PROFILE holdout high        rows=126
+PROFILE holdout phase_shift rows=138
+PROFILE holdout prime_scan  rows=150
+RUN uniform     repeat=3 fixed4=0.381s tree=0.442s guarded=0.527s
+RUN moderate    repeat=3 fixed4=0.404s tree=0.424s guarded=0.441s
+RUN high        repeat=2 fixed4=0.400s tree=0.453s guarded=0.485s
+RUN moderate    repeat=4 fixed4=0.385s tree=0.487s guarded=0.400s
+RUN uniform     repeat=4 fixed4=0.364s tree=0.414s guarded=0.389s
+RUN high        repeat=3 fixed4=0.393s tree=0.438s guarded=0.471s
+RUN high        repeat=5 fixed4=0.353s tree=0.405s guarded=0.388s
+RUN phase_shift repeat=2 fixed4=0.391s tree=0.422s guarded=0.474s
+RUN phase_shift repeat=5 fixed4=0.411s tree=0.464s guarded=0.443s
+RUN prime_scan  repeat=2 fixed4=0.186s tree=0.214s guarded=0.208s
+RUN moderate    repeat=2 fixed4=0.383s tree=0.415s guarded=0.404s
+RUN phase_shift repeat=4 fixed4=0.405s tree=0.399s guarded=0.415s
+RUN moderate    repeat=1 fixed4=0.375s tree=0.443s guarded=0.396s
+RUN prime_scan  repeat=5 fixed4=0.198s tree=0.214s guarded=0.199s
+RUN high        repeat=1 fixed4=0.382s tree=0.450s guarded=0.450s
+RUN prime_scan  repeat=1 fixed4=0.207s tree=0.195s guarded=0.230s
+RUN uniform     repeat=1 fixed4=0.370s tree=0.394s guarded=0.399s
+RUN phase_shift repeat=1 fixed4=0.373s tree=0.443s guarded=0.450s
+RUN uniform     repeat=5 fixed4=0.374s tree=0.406s guarded=0.403s
+RUN uniform     repeat=2 fixed4=0.368s tree=0.388s guarded=0.400s
+RUN moderate    repeat=5 fixed4=0.389s tree=0.415s guarded=0.401s
+RUN phase_shift repeat=3 fixed4=0.343s tree=0.384s guarded=0.364s
+RUN prime_scan  repeat=3 fixed4=0.202s tree=0.204s guarded=0.213s
+RUN high        repeat=4 fixed4=0.390s tree=0.435s guarded=0.431s
+RUN prime_scan  repeat=4 fixed4=0.189s tree=0.207s guarded=0.228s
+COMPLETE results_final_linux raw=200 accuracy=0.733 regret=1.000

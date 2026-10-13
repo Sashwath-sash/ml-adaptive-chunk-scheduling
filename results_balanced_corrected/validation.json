@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "raw_rows": 175,
+  "summary_rows": 35,
+  "paired_groups": 25,
+  "checksums_equal": true,
+  "summary_medians_recomputed": true,
+  "selected_method": "balanced_fifo_16",
+  "selected_geomean_paired_ratio_to_fixed4": 0.9847420106450191,
+  "selected_beats_fixed4_geomean": true,
+  "source_and_data_sha256": {
+    "scheduler_v4.py": "d37e419d16707d72f27040d3d486660e0135327931cb19d3047ec09d9f848fb3",
+    "experiment_balanced.py": "f7043ddaa91c64b1c1069ab66be953cf53da9d118c0851a2246d1a6ed531db58",
+    "BALANCED_SELECTION.md": "e226bccf5852f7b7a542847e24e13e1c7ef650037fbd7a8e97182d57c055355f",
+    "TIMING_CORRECTION_PLAN.md": "1f8dacd0a5c39f3c8f06c13710adc3dbb627e9a09152ef67433ed10b28b66197",
+    "raw.csv": "acb8006aa26a09be2f14e18ed7538c0cb6d909380960e49b6c5896487a998e9d",
+    "summary.csv": "547de2532c565a19bf97c1a152ab830f561512e75f082a8151637ca0b5b381f4"
+  }
+}

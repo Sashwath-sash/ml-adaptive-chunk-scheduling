@@ -1,0 +1,39 @@
+{
+  "system": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "cpu": "x86_64",
+  "logical_cpus": 2,
+  "workers": 4,
+  "base_iterations": 350000,
+  "task_count": 192,
+  "repeats": 3,
+  "fixed_chunks": [
+    1,
+    4,
+    16,
+    64
+  ],
+  "training": {
+    "training_and_label_collection_s": 9.990403541,
+    "train_samples": 32,
+    "holdout_samples": 12,
+    "holdout_exact_chunk_accuracy": 0.5,
+    "train_seeds": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "holdout_seeds": [
+      101,
+      102,
+      103
+    ]
+  },
+  "kernel": "compiled C shared library; gcc -O2",
+  "timing_boundary": "end-to-end wall clock including pool startup and inference; offline training reported separately"
+}

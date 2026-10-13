@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "system": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "workers": 2,
+  "count": 192,
+  "repeats": 5,
+  "workloads": [
+    "uniform",
+    "moderate",
+    "high",
+    "phase_shift",
+    "prime_scan"
+  ],
+  "methods": [
+    "fixed_4",
+    "fixed_16",
+    "ml",
+    "guarded_ml",
+    "ml_once",
+    "pool_map_16",
+    "process_executor_16"
+  ],
+  "raw_rows": 175,
+  "summary_rows": 35,
+  "decision_rows": 298,
+  "all_group_checksums_equal": true,
+  "model": "results_final_linux/model.json",
+  "base": 1500000,
+  "prime_base": 3000,
+  "timing_boundary": "total wall time including pool startup, dispatch, inference and teardown",
+  "randomization": "workload/repeat groups and method order seeded and shuffled",
+  "scope": "same held-out task seeds; one Linux host; exploratory paired runs"
+}

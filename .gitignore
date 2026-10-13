@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+build/
+os_conversion/
+os_source.doc
+add_missing_module_workflows.py
+add_repository_link.py
+output/*
+!output/OS_Review2_User_Edited_With_Module_Workflows.docx
+!output/OS_Review2_User_Edited_With_Module_Workflows.pdf

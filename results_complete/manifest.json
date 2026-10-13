@@ -1,0 +1,65 @@
+{
+  "project": "Machine-Learning-Assisted Adaptive Chunk Scheduling for Multiprocessing Workloads",
+  "system": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3",
+  "compiler": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+  "logical_cpus": 2,
+  "workers": 2,
+  "synthetic_base_iterations": 1500000,
+  "prime_numbers_per_task": 3000,
+  "task_count": 192,
+  "repeats": 5,
+  "workloads": [
+    "uniform",
+    "moderate",
+    "high",
+    "phase_shift",
+    "prime_scan"
+  ],
+  "methods": [
+    "sequential",
+    "fixed_1",
+    "fixed_4",
+    "fixed_16",
+    "fixed_64",
+    "rule",
+    "ml",
+    "guarded_ml"
+  ],
+  "training": {
+    "training_and_label_collection_s": 390.62584075800004,
+    "training_rows": 90,
+    "holdout_rows": 60,
+    "holdout_exact_accuracy": 0.6166666666666667,
+    "holdout_median_regret_ratio": 1.0151017647307068,
+    "train_seeds": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "holdout_seeds": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "candidate_repeats": 2,
+    "label_rule": "smallest median candidate time; chunks within 3% tie use larger chunk"
+  },
+  "experiment": {
+    "raw_rows": 200,
+    "summary_rows": 40,
+    "dataset_rows": 4800,
+    "decision_rows": 893,
+    "all_checksums_equal": true
+  },
+  "total_pipeline_s": 493.595152657,
+  "timing_boundary": "total wall clock includes pool startup, teardown, dispatch, live decisions; training excluded from test runs",
+  "latency_definition": "batch latency from parent dispatch to worker completion; p95 per run; queue wait and C service separately",
+  "cpu_definition": "RUSAGE_SELF + RUSAGE_CHILDREN CPU seconds divided by worker capacity; unavailable on Windows",
+  "randomization": "method order seeded per workload/repeat; candidate profile order shuffled per pass",
+  "scope": "application-level dispatch to Linux/Windows processes, not kernel scheduler modification"
+}
