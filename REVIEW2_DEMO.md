@@ -46,4 +46,6 @@ python3 -m os_sched.verify_straggler results_straggler_repeat
 
 **Why does cost balancing help?** When a very expensive task is at the tail, fixed FIFO chunks may start it late. The planner moves its batch forward so its C work overlaps the other batches.
 
-**What remains?** Test inaccurate cost metadata, more worker counts and a second machine, and evaluate real traces. These are necessary before generalizing the measured speedup.
+**Why combine the methods?** The tree beats fixed 4 on prime scan (paired ratio 0.894), but repeated round waits may contribute to its losses elsewhere, especially high variance (1.245). Cost balancing starts estimated heavy work early and wins on late-heavy tasks (0.870), but is slightly slower on high variance (1.006) and depends on useful cost estimates. The proposed next step is one pilot and one tree decision for batch size, followed by cost-aware ordering of the remaining tasks without repeated round waits. A reliability and overhead gate would fall back to fixed chunks when estimates disagree with observed pilot times or little work remains. This is a design to test, not a demonstrated hybrid speedup.
+
+**What remains?** Implement and compare that combined method against fixed 4, tree-only and balance-only on matched seeds. Then test inaccurate cost metadata, more worker counts and a second machine, and evaluate real traces before generalizing any speedup.
