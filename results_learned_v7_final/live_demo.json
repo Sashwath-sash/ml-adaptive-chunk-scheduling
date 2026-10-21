@@ -1,0 +1,75 @@
+{
+  "kind": "phase_shift",
+  "seed": 20001,
+  "tasks": 192,
+  "workers": 2,
+  "model": {
+    "depth_cap": 1,
+    "min_leaf": 8,
+    "mean_log_regret": 0.009336575406972754,
+    "median_ratio_to_contig32": 0.9774139339716968,
+    "wins": 13
+  },
+  "features": {
+    "log_mean_cost": 14.578650576544613,
+    "log_total_cost": 19.836145484800163,
+    "cost_cv": 1.0857392492174425,
+    "max_to_mean": 2.871794871794872,
+    "p90_to_mean": 2.871794871794872,
+    "p50_to_mean": 0.46153846153846156,
+    "tail_cost_share": 0.358974358974359,
+    "first_quarter_share": 0.11538461538461539,
+    "last_quarter_share": 0.39850427350427353,
+    "max_index_fraction": 0.518324607329843,
+    "prime_fraction": 0.0,
+    "log_mean_work": 14.578650576544613,
+    "log_max_work": 15.633587497847351,
+    "count": 192.0,
+    "workers": 2.0
+  },
+  "decision_path": [
+    {
+      "feature": "p90_to_mean",
+      "observed": 2.871794871794872,
+      "threshold": 2.6845125187999974,
+      "branch": "right"
+    }
+  ],
+  "selected_policy": "lpt_4",
+  "methods": {
+    "fixed_4": {
+      "elapsed_s": 0.592075303,
+      "checksum": 1808851326488837457905,
+      "batch_count": 48,
+      "batch_latency_p95_s": 0.5511575477999999
+    },
+    "lpt_4": {
+      "elapsed_s": 0.68367362,
+      "checksum": 1808851326488837457905,
+      "batch_count": 4,
+      "batch_latency_p95_s": 0.6687619339
+    },
+    "contig_32": {
+      "elapsed_s": 0.735287299,
+      "checksum": 1808851326488837457905,
+      "batch_count": 36,
+      "batch_latency_p95_s": 0.7044680440000001
+    },
+    "learned": {
+      "elapsed_s": 0.812132783,
+      "checksum": 1808851326488837457905,
+      "batch_count": 4,
+      "batch_latency_p95_s": 0.78651747585,
+      "selected_policy": "lpt_4",
+      "inference_s": 0.000403
+    },
+    "lpt_2": {
+      "elapsed_s": 0.818177133,
+      "checksum": 1808851326488837457905,
+      "batch_count": 2,
+      "batch_latency_p95_s": 0.80394263195
+    }
+  },
+  "checksum_equal": true,
+  "warning": "one live run is functional evidence; use saved held-out groups for performance estimates"
+}

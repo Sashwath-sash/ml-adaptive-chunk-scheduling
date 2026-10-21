@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "candidate_repeats": 2,
+  "workers": 2,
+  "count": 192,
+  "scales": [
+    [
+      800000,
+      1600
+    ],
+    [
+      3200000,
+      6400
+    ]
+  ],
+  "seed_base": 16001,
+  "groups": 48,
+  "timed_runs": 480,
+  "features": [
+    "log_mean_cost",
+    "log_total_cost",
+    "cost_cv",
+    "max_to_mean",
+    "p90_to_mean",
+    "p50_to_mean",
+    "tail_cost_share",
+    "first_quarter_share",
+    "last_quarter_share",
+    "max_index_fraction",
+    "prime_fraction",
+    "log_mean_work",
+    "log_max_work",
+    "count",
+    "workers"
+  ],
+  "candidates": [
+    "fixed_16",
+    "contig_32",
+    "lpt_2",
+    "lpt_4",
+    "lpt_8"
+  ],
+  "labels": {
+    "lpt_2": 17,
+    "lpt_4": 10,
+    "lpt_8": 10,
+    "contig_32": 9,
+    "fixed_16": 2
+  },
+  "label_rule": "lowest median complete invocation, if >=2% faster than contig_32; else contig_32"
+}

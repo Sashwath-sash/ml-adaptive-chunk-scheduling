@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "workers": 2,
+  "count": 192,
+  "groups": 60,
+  "timed_runs": 600,
+  "methods": [
+    "sequential",
+    "fixed_4",
+    "fixed_16",
+    "contig_32",
+    "lpt_2",
+    "lpt_4",
+    "lpt_8",
+    "pool_map_16",
+    "process_executor_16",
+    "learned"
+  ],
+  "seed_base": 18001,
+  "test_seeds": 10,
+  "test_scale": [
+    2200000,
+    4400
+  ],
+  "training_seeds": [
+    16001,
+    16002,
+    16003,
+    16004
+  ],
+  "validation_seeds": [
+    17001,
+    17002,
+    17003
+  ],
+  "checksum_equality": true,
+  "method_order": "seeded shuffle within each matched task group",
+  "timer": "whole invocation including feature calculation, prediction, planning, pool startup, IPC, C work, and teardown",
+  "primary_metric": "median paired ratio of complete time to contig_32",
+  "scope": "constructed workloads on one WSL2 host; exploratory"
+}

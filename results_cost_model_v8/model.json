@@ -1,0 +1,36 @@
+{
+  "type": "kernel_specific_log_duration_ridge",
+  "ridge": 1.0,
+  "features": [
+    "intercept",
+    "log(work)-12",
+    "log(seed)-18"
+  ],
+  "coefficients": {
+    "prime": [
+      -0.06830723981252307,
+      0.9867904144856467,
+      0.559702871667426
+    ],
+    "synthetic": [
+      -7.723842332756798,
+      0.9964814120393506,
+      -0.005233132085020474
+    ]
+  },
+  "train_seeds": [
+    21001,
+    21002,
+    21003,
+    21004
+  ],
+  "validation_seeds": [
+    22001,
+    22002,
+    22003
+  ],
+  "train_rows": 9216,
+  "validation_rows": 3456,
+  "prediction_target": "individually measured C-task service seconds",
+  "boundary": "offline fit; online cost predictions from pre-dispatch task metadata"
+}

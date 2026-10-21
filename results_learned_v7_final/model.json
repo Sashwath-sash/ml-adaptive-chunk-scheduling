@@ -1,0 +1,83 @@
+{
+  "model": {
+    "max_depth": 1,
+    "min_leaf": 8,
+    "root": {
+      "feature": 4,
+      "threshold": 2.6845125187999974,
+      "left": {
+        "value": "lpt_2",
+        "n": 40
+      },
+      "right": {
+        "value": "lpt_4",
+        "n": 8
+      },
+      "value": "lpt_2",
+      "n": 48
+    }
+  },
+  "features": [
+    "log_mean_cost",
+    "log_total_cost",
+    "cost_cv",
+    "max_to_mean",
+    "p90_to_mean",
+    "p50_to_mean",
+    "tail_cost_share",
+    "first_quarter_share",
+    "last_quarter_share",
+    "max_index_fraction",
+    "prime_fraction",
+    "log_mean_work",
+    "log_max_work",
+    "count",
+    "workers"
+  ],
+  "candidates": [
+    "fixed_16",
+    "contig_32",
+    "lpt_2",
+    "lpt_4",
+    "lpt_8"
+  ],
+  "fallback": "contig_32",
+  "chosen": {
+    "depth_cap": 1,
+    "min_leaf": 8,
+    "mean_log_regret": 0.009336575406972754,
+    "median_ratio_to_contig32": 0.9774139339716968,
+    "wins": 13
+  },
+  "selection_rule": "lowest validation mean log regret; within 0.005 choose shallowest/largest leaf",
+  "training_groups": 48,
+  "validation_groups": 18,
+  "training_seeds": [
+    16001,
+    16002,
+    16003,
+    16004
+  ],
+  "validation_seeds": [
+    17001,
+    17002,
+    17003
+  ],
+  "train_scales": [
+    [
+      800000,
+      1600
+    ],
+    [
+      3200000,
+      6400
+    ]
+  ],
+  "validation_scale": [
+    1600000,
+    3200
+  ],
+  "workers": 2,
+  "count": 192,
+  "inference_boundary": "task metadata only, before pool creation; zero runtime pilot"
+}

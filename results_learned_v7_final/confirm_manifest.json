@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "frozen_model": {
+    "depth_cap": 1,
+    "min_leaf": 8,
+    "mean_log_regret": 0.009336575406972754,
+    "median_ratio_to_contig32": 0.9774139339716968,
+    "wins": 13
+  },
+  "scale": [
+    4000000,
+    8000
+  ],
+  "seed_base": 25001,
+  "seeds_per_kind": 20,
+  "groups": 120,
+  "timed_runs": 480,
+  "methods": [
+    "contig_32",
+    "lpt_2",
+    "lpt_4",
+    "learned"
+  ],
+  "checksums_equal": true,
+  "method_order": "seeded shuffle per matched group",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "scope": "one WSL2 host, generated workloads, scale beyond training"
+}
