@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "split": "validation",
+  "system": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "workers": 2,
+  "count": 192,
+  "base": 1500000,
+  "prime_base": 3000,
+  "seeds": [
+    3001,
+    3002,
+    3003
+  ],
+  "kinds": [
+    "uniform",
+    "moderate",
+    "high",
+    "phase_shift",
+    "prime_scan",
+    "late_heavy"
+  ],
+  "methods": [
+    "fixed_4",
+    "balanced_16",
+    "balanced_32",
+    "balanced_64",
+    "hybrid_once",
+    "auto"
+  ],
+  "raw_rows": 108,
+  "groups": 18,
+  "checksum_equality": true,
+  "method_order": "seeded shuffle within group",
+  "timing": "full invocation including feature extraction, selector, planning, pool startup and teardown; offline training excluded",
+  "primary_metric": "median within-seed wall-time ratio to fixed_4",
+  "scope": "one WSL2 host; exploratory; 95% bootstrap intervals from small seed samples"
+}

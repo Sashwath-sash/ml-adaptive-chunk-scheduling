@@ -1,0 +1,124 @@
+{
+  "kind": "late_heavy",
+  "seed": 9001,
+  "base": 2000000,
+  "prime_base": 4000,
+  "count": 192,
+  "workers": 2,
+  "checksums_equal": true,
+  "mixed_tree_path": [
+    {
+      "feature": "remaining_cost_cv",
+      "measured_or_known_value": 2.471044124738277,
+      "threshold": 1.9181884939099825,
+      "branch": "right"
+    },
+    {
+      "feature": "remaining_cost_cv",
+      "measured_or_known_value": 2.471044124738277,
+      "threshold": 2.481339713002612,
+      "branch": "left"
+    }
+  ],
+  "runtime_only_tree_path": [
+    {
+      "feature": "pilot_service_p95_s",
+      "measured_or_known_value": 0.0242722943,
+      "threshold": 0.0107476962,
+      "branch": "right"
+    }
+  ],
+  "results": {
+    "fixed_no_pilot": {
+      "elapsed_s": 0.721210383,
+      "checksum": 1628019206062401857725,
+      "decisions": [],
+      "startup_s": 0.016029272,
+      "cpu_s": 1.095775,
+      "cpu_utilization_fraction": 0.7596777762973499,
+      "batch_latency_p50_s": 0.265583727,
+      "batch_latency_p95_s": 0.47608305230000003,
+      "batch_latency_p99_s": 0.6026840494900002,
+      "queue_wait_p95_s": 0.4562169661,
+      "service_p95_s": 0.024520254999999998,
+      "decision_p95_s": 0.0
+    },
+    "cost32_no_pilot": {
+      "elapsed_s": 0.62681158,
+      "checksum": 1628019206062401857725,
+      "startup_s": 0.009725896,
+      "cpu_s": 1.0901530000000001,
+      "cpu_utilization_fraction": 0.8696018347331745,
+      "batch_latency_p95_s": 0.6023810446000001,
+      "queue_wait_p95_s": 0.5709248872,
+      "service_p95_s": 0.05005795980000003,
+      "batch_count": 29,
+      "batch_size_min": 1,
+      "batch_size_max": 7
+    },
+    "live_tree": {
+      "elapsed_s": 0.822671253,
+      "checksum": 1628019206062401857725,
+      "startup_s": 0.004511187,
+      "cpu_s": 1.1325689999999997,
+      "cpu_utilization_fraction": 0.6883484720475578,
+      "batch_latency_p50_s": 0.369582803,
+      "batch_latency_p95_s": 0.68722916225,
+      "batch_latency_p99_s": 0.7082585378999999,
+      "queue_wait_p95_s": 0.659056169,
+      "service_p95_s": 0.06722836425,
+      "decision_s": 0.001137251,
+      "pilot_elapsed_s": 0.098606853,
+      "pilot_tasks": 32,
+      "batch_count": 36,
+      "policy": "cost_32",
+      "features": {
+        "pilot_mean_task_s": 0.0058561565,
+        "pilot_service_cv": 0.1280809753058669,
+        "pilot_throughput_tps": 324.5210553469342,
+        "pilot_queue_wait_p95_s": 0.07189371615,
+        "pilot_batch_latency_p95_s": 0.09620350080000001,
+        "pilot_service_p95_s": 0.0274756282,
+        "remaining_cost_cv": 2.471044124738277,
+        "remaining_max_to_mean": 32.15339242078525,
+        "remaining_tail_cost_share": 0.29655188124952364,
+        "prime_fraction": 0.0,
+        "remaining_fraction": 0.8333333333333334,
+        "workers": 2.0
+      },
+      "pilot_boundary": "completed C work on first 4*workers*4 tasks; one barrier"
+    },
+    "live_tree_runtime_only": {
+      "elapsed_s": 0.708792435,
+      "checksum": 1628019206062401857725,
+      "startup_s": 0.006484407,
+      "cpu_s": 1.105876999999999,
+      "cpu_utilization_fraction": 0.7801134333494961,
+      "batch_latency_p50_s": 0.1748515745,
+      "batch_latency_p95_s": 0.3920848092,
+      "batch_latency_p99_s": 0.5154700101000003,
+      "queue_wait_p95_s": 0.3703199176,
+      "service_p95_s": 0.023759096049999998,
+      "decision_s": 0.001391752,
+      "pilot_elapsed_s": 0.090945529,
+      "pilot_tasks": 32,
+      "batch_count": 48,
+      "policy": "fixed_4",
+      "features": {
+        "pilot_mean_task_s": 0.00533569015625,
+        "pilot_service_cv": 0.0827854627723408,
+        "pilot_throughput_tps": 351.8589682402089,
+        "pilot_queue_wait_p95_s": 0.06856576375,
+        "pilot_batch_latency_p95_s": 0.08920084335,
+        "pilot_service_p95_s": 0.0242722943,
+        "remaining_cost_cv": 2.471044124738277,
+        "remaining_max_to_mean": 32.15339242078525,
+        "remaining_tail_cost_share": 0.29655188124952364,
+        "prime_fraction": 0.0,
+        "remaining_fraction": 0.8333333333333334,
+        "workers": 2.0
+      },
+      "pilot_boundary": "completed C work on first 4*workers*4 tasks; one barrier"
+    }
+  }
+}

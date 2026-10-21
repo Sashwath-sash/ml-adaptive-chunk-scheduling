@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "workers": 2,
+  "count": 192,
+  "train_scales": [
+    [
+      500000,
+      1000
+    ],
+    [
+      3000000,
+      6000
+    ]
+  ],
+  "train_seeds": [
+    6001,
+    6002,
+    6003,
+    6004
+  ],
+  "candidate_repeats": 2,
+  "features": [
+    "pilot_mean_task_s",
+    "pilot_service_cv",
+    "pilot_throughput_tps",
+    "pilot_queue_wait_p95_s",
+    "pilot_batch_latency_p95_s",
+    "pilot_service_p95_s",
+    "remaining_cost_cv",
+    "remaining_max_to_mean",
+    "remaining_tail_cost_share",
+    "prime_fraction",
+    "remaining_fraction",
+    "workers"
+  ],
+  "policies": [
+    "fixed_4",
+    "cost_16",
+    "cost_32",
+    "cost_64"
+  ],
+  "label_margin": 0.03,
+  "training_rows": 384,
+  "training_groups": 48,
+  "label_counts": {
+    "fixed_4": 28,
+    "cost_32": 7,
+    "cost_16": 12,
+    "cost_64": 1
+  },
+  "label_definition": "lowest median full-invocation policy, if 3% below pilot-fixed; else pilot-fixed"
+}

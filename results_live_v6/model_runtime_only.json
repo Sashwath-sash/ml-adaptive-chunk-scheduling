@@ -1,0 +1,71 @@
+{
+  "tree": {
+    "max_depth": 1,
+    "min_leaf": 20,
+    "root": {
+      "feature": 5,
+      "threshold": 0.0107476962,
+      "left": {
+        "value": "fixed_4",
+        "n": 130
+      },
+      "right": {
+        "value": "fixed_4",
+        "n": 254
+      },
+      "value": "fixed_4",
+      "n": 384
+    }
+  },
+  "features": [
+    "pilot_mean_task_s",
+    "pilot_service_cv",
+    "pilot_throughput_tps",
+    "pilot_queue_wait_p95_s",
+    "pilot_batch_latency_p95_s",
+    "pilot_service_p95_s"
+  ],
+  "policies": [
+    "fixed_4",
+    "cost_16",
+    "cost_32",
+    "cost_64"
+  ],
+  "variant": "runtime_only",
+  "chosen_hyperparameters": {
+    "depth_cap": 1,
+    "min_leaf": 20,
+    "mean_log_regret": 0.03417673561872165,
+    "exact_groups": 11,
+    "validation_groups": 18
+  },
+  "selection_rule": "lowest validation mean log regret; within 0.005 choose shallowest/largest leaf",
+  "train_seeds": [
+    6001,
+    6002,
+    6003,
+    6004
+  ],
+  "validation_seeds": [
+    7001,
+    7002,
+    7003
+  ],
+  "train_scales": [
+    [
+      500000,
+      1000
+    ],
+    [
+      3000000,
+      6000
+    ]
+  ],
+  "validation_scale": [
+    1500000,
+    3000
+  ],
+  "workers": 2,
+  "count": 192,
+  "measurement_boundary": "32-task completed compiled-C pilot for two workers; full invocation labels"
+}

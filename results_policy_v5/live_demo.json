@@ -1,0 +1,80 @@
+{
+  "kind": "late_heavy",
+  "seed": 5001,
+  "workers": 2,
+  "count": 192,
+  "checksums_equal": true,
+  "results": {
+    "fixed_4": {
+      "elapsed_s": 1.171059893,
+      "checksum": 1765122860368397885560,
+      "decisions": [],
+      "startup_s": 0.335735556,
+      "cpu_s": 0.970863,
+      "cpu_utilization_fraction": 0.414523204920314,
+      "batch_latency_p50_s": 0.36773416049999996,
+      "batch_latency_p95_s": 0.6694836802999999,
+      "batch_latency_p99_s": 0.7709430246600002,
+      "queue_wait_p95_s": 0.64741456165,
+      "service_p95_s": 0.07815854819999993,
+      "decision_p95_s": 0.0
+    },
+    "balanced_32": {
+      "elapsed_s": 0.446133073,
+      "checksum": 1765122860368397885560,
+      "startup_s": 0.005524,
+      "cpu_s": 0.870441,
+      "cpu_utilization_fraction": 0.9755396457684276,
+      "batch_latency_p95_s": 0.4279213512,
+      "queue_wait_p95_s": 0.4054877872,
+      "service_p95_s": 0.030325985000000003,
+      "batch_count": 29,
+      "batch_size_min": 1,
+      "batch_size_max": 7
+    },
+    "hybrid_once": {
+      "elapsed_s": 0.455880875,
+      "checksum": 1765122860368397885560,
+      "startup_s": 0.008968602,
+      "cpu_s": 0.8789630000000002,
+      "cpu_utilization_fraction": 0.964027060797407,
+      "batch_latency_p50_s": 0.22707858749999998,
+      "batch_latency_p95_s": 0.400124796,
+      "batch_latency_p99_s": 0.400459652,
+      "queue_wait_p95_s": 0.38659287305,
+      "service_p95_s": 0.05963003480000007,
+      "decision_p95_s": 4.53e-05,
+      "batch_count": 20,
+      "pilot_tasks": 16,
+      "chosen_chunk": 16,
+      "target_batches": 16,
+      "reason": "one_tree_decision_then_cost_order"
+    },
+    "auto": {
+      "elapsed_s": 0.474835079,
+      "checksum": 1765122860368397885560,
+      "startup_s": 0.007241002,
+      "cpu_s": 0.9032749999999998,
+      "cpu_utilization_fraction": 0.9535872593483158,
+      "batch_latency_p95_s": 0.4532927245,
+      "queue_wait_p95_s": 0.43711184675000003,
+      "service_p95_s": 0.09689861625,
+      "batch_count": 16,
+      "batch_size_min": 1,
+      "batch_size_max": 14,
+      "selected_policy": "balanced_16",
+      "features": {
+        "prime_fraction": 0.0,
+        "cost_cv": 2.3326842096155262,
+        "max_to_mean_cost": 33.23215459621396,
+        "tail_cost_share": 0.2723029131661541,
+        "head_cost_share": 0.10414068751875709,
+        "largest_position": 0.9790575916230366,
+        "task_count": 192.0,
+        "workers": 2.0
+      },
+      "feature_s": 9.71e-05,
+      "selection_s": 4.6e-06
+    }
+  }
+}

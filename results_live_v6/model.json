@@ -1,0 +1,97 @@
+{
+  "tree": {
+    "max_depth": 2,
+    "min_leaf": 20,
+    "root": {
+      "feature": 6,
+      "threshold": 1.9181884939099825,
+      "left": {
+        "feature": 9,
+        "threshold": 0.5,
+        "left": {
+          "value": "fixed_4",
+          "n": 256
+        },
+        "right": {
+          "value": "cost_32",
+          "n": 64
+        },
+        "value": "fixed_4",
+        "n": 320
+      },
+      "right": {
+        "feature": 6,
+        "threshold": 2.481339713002612,
+        "left": {
+          "value": "cost_32",
+          "n": 40
+        },
+        "right": {
+          "value": "cost_16",
+          "n": 24
+        },
+        "value": "cost_16",
+        "n": 64
+      },
+      "value": "fixed_4",
+      "n": 384
+    }
+  },
+  "features": [
+    "pilot_mean_task_s",
+    "pilot_service_cv",
+    "pilot_throughput_tps",
+    "pilot_queue_wait_p95_s",
+    "pilot_batch_latency_p95_s",
+    "pilot_service_p95_s",
+    "remaining_cost_cv",
+    "remaining_max_to_mean",
+    "remaining_tail_cost_share",
+    "prime_fraction",
+    "remaining_fraction",
+    "workers"
+  ],
+  "policies": [
+    "fixed_4",
+    "cost_16",
+    "cost_32",
+    "cost_64"
+  ],
+  "variant": "mixed",
+  "chosen_hyperparameters": {
+    "depth_cap": 2,
+    "min_leaf": 20,
+    "mean_log_regret": 0.022420540621042342,
+    "exact_groups": 11,
+    "validation_groups": 18
+  },
+  "selection_rule": "lowest validation mean log regret; within 0.005 choose shallowest/largest leaf",
+  "train_seeds": [
+    6001,
+    6002,
+    6003,
+    6004
+  ],
+  "validation_seeds": [
+    7001,
+    7002,
+    7003
+  ],
+  "train_scales": [
+    [
+      500000,
+      1000
+    ],
+    [
+      3000000,
+      6000
+    ]
+  ],
+  "validation_scale": [
+    1500000,
+    3000
+  ],
+  "workers": 2,
+  "count": 192,
+  "measurement_boundary": "32-task completed compiled-C pilot for two workers; full invocation labels"
+}

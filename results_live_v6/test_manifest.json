@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "system": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "workers": 2,
+  "count": 192,
+  "test_scale": [
+    2000000,
+    4000
+  ],
+  "test_seeds": [
+    8001,
+    8002,
+    8003,
+    8004,
+    8005,
+    8006,
+    8007,
+    8008,
+    8009,
+    8010
+  ],
+  "train_seeds": [
+    6001,
+    6002,
+    6003,
+    6004
+  ],
+  "validation_seeds": [
+    7001,
+    7002,
+    7003
+  ],
+  "groups": 60,
+  "raw_rows": 480,
+  "methods": [
+    "fixed_no_pilot",
+    "cost32_no_pilot",
+    "pilot_fixed_4",
+    "pilot_cost_16",
+    "pilot_cost_32",
+    "pilot_cost_64",
+    "live_tree",
+    "live_tree_runtime_only"
+  ],
+  "checksum_equality": true,
+  "method_order": "seeded shuffle within each group",
+  "timer": "complete invocation including live pilot, tree inference, planning, pool lifecycle; model fitting excluded",
+  "primary_metric": "median paired whole-run ratio to fixed_no_pilot",
+  "scope": "one WSL2 host; constructed workloads; exploratory"
+}

@@ -1,0 +1,99 @@
+{
+  "tree": {
+    "max_depth": 3,
+    "min_leaf": 4,
+    "root": {
+      "feature": 5,
+      "threshold": 0.8612565445026179,
+      "left": {
+        "feature": 2,
+        "threshold": 2.8318607157676725,
+        "left": {
+          "feature": 1,
+          "threshold": 0.13395543131366835,
+          "left": {
+            "value": "fixed_4",
+            "n": 6
+          },
+          "right": {
+            "value": "fixed_4",
+            "n": 11
+          },
+          "value": "fixed_4",
+          "n": 17
+        },
+        "right": {
+          "value": "fixed_4",
+          "n": 6
+        },
+        "value": "fixed_4",
+        "n": 23
+      },
+      "right": {
+        "feature": 1,
+        "threshold": 2.3267052567569007,
+        "left": {
+          "feature": 1,
+          "threshold": 0.06370643975602583,
+          "left": {
+            "value": "balanced_64",
+            "n": 4
+          },
+          "right": {
+            "value": "balanced_64",
+            "n": 4
+          },
+          "value": "balanced_64",
+          "n": 8
+        },
+        "right": {
+          "value": "balanced_16",
+          "n": 5
+        },
+        "value": "balanced_64",
+        "n": 13
+      },
+      "value": "fixed_4",
+      "n": 36
+    }
+  },
+  "features": [
+    "prime_fraction",
+    "cost_cv",
+    "max_to_mean_cost",
+    "tail_cost_share",
+    "head_cost_share",
+    "largest_position",
+    "task_count",
+    "workers"
+  ],
+  "policies": [
+    "fixed_4",
+    "balanced_16",
+    "balanced_32",
+    "balanced_64",
+    "hybrid_once"
+  ],
+  "train_seeds": [
+    2001,
+    2002,
+    2003,
+    2004,
+    2005,
+    2006
+  ],
+  "candidate_repeats": 2,
+  "improvement_margin": 0.05,
+  "workers": 2,
+  "count": 192,
+  "base": 1500000,
+  "prime_base": 3000,
+  "label_counts": {
+    "fixed_4": 21,
+    "balanced_16": 4,
+    "balanced_32": 4,
+    "balanced_64": 6,
+    "hybrid_once": 1
+  },
+  "note": "tree fitted only to training seeds; targets are measured full-run candidate medians"
+}
