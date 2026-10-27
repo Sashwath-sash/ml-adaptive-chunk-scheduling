@@ -31,6 +31,8 @@ def run():
     parser.add_argument("--capacity", type=int, default=512,
                         help="Cache entries; frozen model and threshold are unchanged")
     parser.add_argument("--only", choices=tuple(INPUTS))
+    parser.add_argument("--input-folder", help="Use one additional exported native trace folder")
+    parser.add_argument("--stream-name", help="Label for --input-folder")
     args = parser.parse_args()
     if args.output.exists():
         parser.error("output already exists")
@@ -38,13 +40,18 @@ def run():
         parser.error("repeats must be positive")
     if not 2 <= args.capacity <= 65536:
         parser.error("capacity must be 2..65536")
+    if bool(args.input_folder) != bool(args.stream_name):
+        parser.error("--input-folder and --stream-name are required together")
+    if args.input_folder and args.only:
+        parser.error("--only cannot be combined with --input-folder")
 
     linux_root = "/mnt/" + ROOT.drive[0].lower() + ROOT.as_posix()[2:]
     prefix = ["wsl.exe", "--cd", linux_root, "-e"]
     results = {"created_utc": datetime.now(timezone.utc).isoformat(),
                "repeats": args.repeats, "capacity_entries": args.capacity,
                "streams": {}}
-    for stream, folder in INPUTS.items():
+    inputs = ({args.stream_name: args.input_folder} if args.input_folder else INPUTS)
+    for stream, folder in inputs.items():
         if args.only and stream != args.only:
             continue
         observations = {policy: [] for policy in POLICIES}

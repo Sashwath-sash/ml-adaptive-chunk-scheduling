@@ -1,0 +1,10 @@
+{
+  "source_url": "https://ftp.pdl.cmu.edu/pub/datasets/twemcacheWorkload/txt/metaCDN.sample10.txt.zst",
+  "compressed_sha256": "f5818401662c558240645a015dfbf47515c0d00feb0af6dfe7afd7938de7f3b2",
+  "rows": 100000,
+  "unique_keys": 51875,
+  "source_sampling": "sample10: source naming suggests one of ten requests; do not infer unsampled rates",
+  "conversion": "Anonymized numeric ID becomes key; size=0, host=0, path and key lengths=ID length, static/query=0",
+  "limitation": "Out-of-domain key-only stress test; no object bytes, sizes, real URL features, or 2025 Meta trace",
+  "tls_note": "Source host served an expired TLS certificate on download; file hash pins the acquired bytes, not source authenticity"
+}

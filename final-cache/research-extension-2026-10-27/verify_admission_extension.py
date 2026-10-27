@@ -41,4 +41,15 @@ for capacity, file in names.items():
     fixed_wins[capacity] = count
 assert fixed_wins == {256: 3, 512: 8, 1024: 4}
 assert calibrated_tally == [18, 5, 1], calibrated_tally
-print("PASS: six policies, checksums, fixed-budget wins, validation selection, and exploratory outcomes")
+meta = json.loads((ROOT / "results_metacdn_sample10_100k_512.json").read_text())
+meta = meta["streams"]["MetaCDN-sampled"]
+assert {p: d["direct_reads"] for p, d in meta["policies"].items()} == {
+    "arc": 62532, "second_touch_arc": 69067, "hybrid_arc": 69720,
+    "s3fifo": 61628, "second_touch_s3fifo": 68806,
+    "hybrid_s3fifo": 69646}
+diagnostics = json.loads((ROOT / "results_metacdn_sample10_diagnostics.json").read_text())
+assert diagnostics["independent_reference_read_counts"] == {
+    p: meta["policies"][p]["direct_reads"]
+    for p in ("arc", "hybrid_arc", "s3fifo", "hybrid_s3fifo")}
+assert 0.80 < diagnostics["roc_auc"] < 0.81
+print("PASS: controls, checksums, capacity selection, and independent key-only stress counts")
