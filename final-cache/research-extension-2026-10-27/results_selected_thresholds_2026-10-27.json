@@ -1,0 +1,228 @@
+{
+  "selection": "results_admission_threshold_selection_2026-10-27.json",
+  "exploratory_post_hoc": true,
+  "capacities": {
+    "256": {
+      "BrowseTrace A": {
+        "arc": {
+          "threshold_selected_on_validation": 0.05,
+          "parent_direct_reads": 10676,
+          "original_fixed_threshold_direct_reads": 10846,
+          "calibrated_direct_reads": 10522,
+          "calibrated_reduction_vs_parent_pct": 1.442,
+          "checksum": "30b2b07c951d794b"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.3,
+          "parent_direct_reads": 10054,
+          "original_fixed_threshold_direct_reads": 10551,
+          "calibrated_direct_reads": 10509,
+          "calibrated_reduction_vs_parent_pct": -4.526,
+          "checksum": "30b2b07c951d794b"
+        }
+      },
+      "BrowseTrace B": {
+        "arc": {
+          "threshold_selected_on_validation": 0.05,
+          "parent_direct_reads": 27662,
+          "original_fixed_threshold_direct_reads": 27780,
+          "calibrated_direct_reads": 27662,
+          "calibrated_reduction_vs_parent_pct": 0.0,
+          "checksum": "61106f348a8cc339"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.3,
+          "parent_direct_reads": 26732,
+          "original_fixed_threshold_direct_reads": 26611,
+          "calibrated_direct_reads": 26699,
+          "calibrated_reduction_vs_parent_pct": 0.123,
+          "checksum": "61106f348a8cc339"
+        }
+      },
+      "NASA August": {
+        "arc": {
+          "threshold_selected_on_validation": 0.05,
+          "parent_direct_reads": 14661,
+          "original_fixed_threshold_direct_reads": 14100,
+          "calibrated_direct_reads": 14661,
+          "calibrated_reduction_vs_parent_pct": 0.0,
+          "checksum": "921b399bc4cddab3"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.3,
+          "parent_direct_reads": 13748,
+          "original_fixed_threshold_direct_reads": 13453,
+          "calibrated_direct_reads": 13264,
+          "calibrated_reduction_vs_parent_pct": 3.521,
+          "checksum": "921b399bc4cddab3"
+        }
+      },
+      "Calgary": {
+        "arc": {
+          "threshold_selected_on_validation": 0.05,
+          "parent_direct_reads": 27476,
+          "original_fixed_threshold_direct_reads": 27493,
+          "calibrated_direct_reads": 27476,
+          "calibrated_reduction_vs_parent_pct": 0.0,
+          "checksum": "33a73d3f7e7328ce"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.3,
+          "parent_direct_reads": 25731,
+          "original_fixed_threshold_direct_reads": 25943,
+          "calibrated_direct_reads": 25708,
+          "calibrated_reduction_vs_parent_pct": 0.089,
+          "checksum": "33a73d3f7e7328ce"
+        }
+      }
+    },
+    "512": {
+      "BrowseTrace A": {
+        "arc": {
+          "threshold_selected_on_validation": 0.3,
+          "parent_direct_reads": 7430,
+          "original_fixed_threshold_direct_reads": 7104,
+          "calibrated_direct_reads": 6874,
+          "calibrated_reduction_vs_parent_pct": 7.483,
+          "checksum": "30b2b07c951d794b"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.2,
+          "parent_direct_reads": 7773,
+          "original_fixed_threshold_direct_reads": 7336,
+          "calibrated_direct_reads": 7336,
+          "calibrated_reduction_vs_parent_pct": 5.622,
+          "checksum": "30b2b07c951d794b"
+        }
+      },
+      "BrowseTrace B": {
+        "arc": {
+          "threshold_selected_on_validation": 0.3,
+          "parent_direct_reads": 17913,
+          "original_fixed_threshold_direct_reads": 17740,
+          "calibrated_direct_reads": 17622,
+          "calibrated_reduction_vs_parent_pct": 1.625,
+          "checksum": "61106f348a8cc339"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.2,
+          "parent_direct_reads": 18950,
+          "original_fixed_threshold_direct_reads": 18586,
+          "calibrated_direct_reads": 18586,
+          "calibrated_reduction_vs_parent_pct": 1.921,
+          "checksum": "61106f348a8cc339"
+        }
+      },
+      "NASA August": {
+        "arc": {
+          "threshold_selected_on_validation": 0.3,
+          "parent_direct_reads": 8792,
+          "original_fixed_threshold_direct_reads": 8130,
+          "calibrated_direct_reads": 8532,
+          "calibrated_reduction_vs_parent_pct": 2.957,
+          "checksum": "921b399bc4cddab3"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.2,
+          "parent_direct_reads": 8349,
+          "original_fixed_threshold_direct_reads": 8048,
+          "calibrated_direct_reads": 8048,
+          "calibrated_reduction_vs_parent_pct": 3.605,
+          "checksum": "921b399bc4cddab3"
+        }
+      },
+      "Calgary": {
+        "arc": {
+          "threshold_selected_on_validation": 0.3,
+          "parent_direct_reads": 16493,
+          "original_fixed_threshold_direct_reads": 15718,
+          "calibrated_direct_reads": 15867,
+          "calibrated_reduction_vs_parent_pct": 3.796,
+          "checksum": "33a73d3f7e7328ce"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.2,
+          "parent_direct_reads": 15406,
+          "original_fixed_threshold_direct_reads": 15177,
+          "calibrated_direct_reads": 15177,
+          "calibrated_reduction_vs_parent_pct": 1.486,
+          "checksum": "33a73d3f7e7328ce"
+        }
+      }
+    },
+    "1024": {
+      "BrowseTrace A": {
+        "arc": {
+          "threshold_selected_on_validation": 0.1,
+          "parent_direct_reads": 6116,
+          "original_fixed_threshold_direct_reads": 6033,
+          "calibrated_direct_reads": 5997,
+          "calibrated_reduction_vs_parent_pct": 1.946,
+          "checksum": "30b2b07c951d794b"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.1,
+          "parent_direct_reads": 6640,
+          "original_fixed_threshold_direct_reads": 6120,
+          "calibrated_direct_reads": 6252,
+          "calibrated_reduction_vs_parent_pct": 5.843,
+          "checksum": "30b2b07c951d794b"
+        }
+      },
+      "BrowseTrace B": {
+        "arc": {
+          "threshold_selected_on_validation": 0.1,
+          "parent_direct_reads": 10503,
+          "original_fixed_threshold_direct_reads": 9831,
+          "calibrated_direct_reads": 10209,
+          "calibrated_reduction_vs_parent_pct": 2.799,
+          "checksum": "61106f348a8cc339"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.1,
+          "parent_direct_reads": 10390,
+          "original_fixed_threshold_direct_reads": 10188,
+          "calibrated_direct_reads": 10275,
+          "calibrated_reduction_vs_parent_pct": 1.107,
+          "checksum": "61106f348a8cc339"
+        }
+      },
+      "NASA August": {
+        "arc": {
+          "threshold_selected_on_validation": 0.1,
+          "parent_direct_reads": 4330,
+          "original_fixed_threshold_direct_reads": 5134,
+          "calibrated_direct_reads": 4308,
+          "calibrated_reduction_vs_parent_pct": 0.508,
+          "checksum": "921b399bc4cddab3"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.1,
+          "parent_direct_reads": 4354,
+          "original_fixed_threshold_direct_reads": 5135,
+          "calibrated_direct_reads": 4345,
+          "calibrated_reduction_vs_parent_pct": 0.207,
+          "checksum": "921b399bc4cddab3"
+        }
+      },
+      "Calgary": {
+        "arc": {
+          "threshold_selected_on_validation": 0.1,
+          "parent_direct_reads": 7858,
+          "original_fixed_threshold_direct_reads": 8144,
+          "calibrated_direct_reads": 7858,
+          "calibrated_reduction_vs_parent_pct": 0.0,
+          "checksum": "33a73d3f7e7328ce"
+        },
+        "s3fifo": {
+          "threshold_selected_on_validation": 0.1,
+          "parent_direct_reads": 7326,
+          "original_fixed_threshold_direct_reads": 8014,
+          "calibrated_direct_reads": 7326,
+          "calibrated_reduction_vs_parent_pct": 0.0,
+          "checksum": "33a73d3f7e7328ce"
+        }
+      }
+    }
+  }
+}

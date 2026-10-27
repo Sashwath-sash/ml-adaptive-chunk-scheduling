@@ -2,7 +2,7 @@
 
 **Student:** Sashwath J, 24BAI0059  
 **Final title:** Machine Learning Assisted Adaptive Chunk Caching for I/O Workloads  
-**Read this on a phone:** This file has the explanation, results, code map, commands, and likely questions. The [presentation](final-cache/Review2_Review3_Combined_Project_Presentation.pptx) and [illustrated technical report](final-cache/Review3_Project_Technical_Report.pdf) are also here. The [complete evidence ZIP](final-cache/hybrid_cache_review_evidence_v10.zip) contains code, data, saved model, results and plots.
+**Read this on a phone:** This file has the explanation, results, code map, commands, and likely questions. The [presentation](final-cache/Review2_Review3_Combined_Project_Presentation.pptx) and [illustrated technical report](final-cache/Review3_Project_Technical_Report.pdf) are also here. The [complete evidence ZIP](final-cache/hybrid_cache_review_evidence_v11.zip) contains code, data, saved model, results and plots. A [later research extension](final-cache/research-extension-2026-10-27/RESEARCH_STATUS.md) tests cheap admission controls and different cache sizes; it finds important failures outside the 512-entry setting used below.
 
 ## The 60-second explanation
 

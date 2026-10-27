@@ -1,0 +1,234 @@
+{
+  "created_utc": "2026-10-27T13:33:43.522201+00:00",
+  "repeats": 1,
+  "streams": {
+    "BrowseTrace A": {
+      "checksum": "30b2b07c951d794b",
+      "policies": {
+        "arc": {
+          "direct_reads": 7430,
+          "median_loop_seconds": 2.303632185,
+          "all_loop_seconds": [
+            2.303632185
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "second_touch_arc": {
+          "direct_reads": 7828,
+          "median_loop_seconds": 2.362643524,
+          "all_loop_seconds": [
+            2.362643524
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "hybrid_arc": {
+          "direct_reads": 7104,
+          "median_loop_seconds": 3.320704736,
+          "all_loop_seconds": [
+            3.320704736
+          ],
+          "tree_nodes_evaluated": 625420,
+          "read_reduction_vs_parent_pct": 4.388,
+          "read_reduction_vs_second_touch_pct": 9.249
+        },
+        "s3fifo": {
+          "direct_reads": 7773,
+          "median_loop_seconds": 2.263413552,
+          "all_loop_seconds": [
+            2.263413552
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "second_touch_s3fifo": {
+          "direct_reads": 8322,
+          "median_loop_seconds": 2.175733932,
+          "all_loop_seconds": [
+            2.175733932
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "hybrid_s3fifo": {
+          "direct_reads": 7336,
+          "median_loop_seconds": 2.217324447,
+          "all_loop_seconds": [
+            2.217324447
+          ],
+          "tree_nodes_evaluated": 642057,
+          "read_reduction_vs_parent_pct": 5.622,
+          "read_reduction_vs_second_touch_pct": 11.848
+        }
+      }
+    },
+    "BrowseTrace B": {
+      "checksum": "61106f348a8cc339",
+      "policies": {
+        "arc": {
+          "direct_reads": 17913,
+          "median_loop_seconds": 5.771096184,
+          "all_loop_seconds": [
+            5.771096184
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "second_touch_arc": {
+          "direct_reads": 18414,
+          "median_loop_seconds": 5.21137134,
+          "all_loop_seconds": [
+            5.21137134
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "hybrid_arc": {
+          "direct_reads": 17740,
+          "median_loop_seconds": 5.258921258,
+          "all_loop_seconds": [
+            5.258921258
+          ],
+          "tree_nodes_evaluated": 1623249,
+          "read_reduction_vs_parent_pct": 0.966,
+          "read_reduction_vs_second_touch_pct": 3.66
+        },
+        "s3fifo": {
+          "direct_reads": 18950,
+          "median_loop_seconds": 4.991823315,
+          "all_loop_seconds": [
+            4.991823315
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "second_touch_s3fifo": {
+          "direct_reads": 19494,
+          "median_loop_seconds": 5.487018909,
+          "all_loop_seconds": [
+            5.487018909
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "hybrid_s3fifo": {
+          "direct_reads": 18586,
+          "median_loop_seconds": 5.111872543,
+          "all_loop_seconds": [
+            5.111872543
+          ],
+          "tree_nodes_evaluated": 1694387,
+          "read_reduction_vs_parent_pct": 1.921,
+          "read_reduction_vs_second_touch_pct": 4.658
+        }
+      }
+    },
+    "NASA August": {
+      "checksum": "921b399bc4cddab3",
+      "policies": {
+        "arc": {
+          "direct_reads": 8792,
+          "median_loop_seconds": 2.346000255,
+          "all_loop_seconds": [
+            2.346000255
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "second_touch_arc": {
+          "direct_reads": 9094,
+          "median_loop_seconds": 2.736276032,
+          "all_loop_seconds": [
+            2.736276032
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "hybrid_arc": {
+          "direct_reads": 8130,
+          "median_loop_seconds": 2.494500008,
+          "all_loop_seconds": [
+            2.494500008
+          ],
+          "tree_nodes_evaluated": 778826,
+          "read_reduction_vs_parent_pct": 7.53,
+          "read_reduction_vs_second_touch_pct": 10.6
+        },
+        "s3fifo": {
+          "direct_reads": 8349,
+          "median_loop_seconds": 2.358219036,
+          "all_loop_seconds": [
+            2.358219036
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "second_touch_s3fifo": {
+          "direct_reads": 8551,
+          "median_loop_seconds": 2.378316141,
+          "all_loop_seconds": [
+            2.378316141
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "hybrid_s3fifo": {
+          "direct_reads": 8048,
+          "median_loop_seconds": 2.75707964,
+          "all_loop_seconds": [
+            2.75707964
+          ],
+          "tree_nodes_evaluated": 770738,
+          "read_reduction_vs_parent_pct": 3.605,
+          "read_reduction_vs_second_touch_pct": 5.882
+        }
+      }
+    },
+    "Calgary": {
+      "checksum": "33a73d3f7e7328ce",
+      "policies": {
+        "arc": {
+          "direct_reads": 16493,
+          "median_loop_seconds": 4.436351545,
+          "all_loop_seconds": [
+            4.436351545
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "second_touch_arc": {
+          "direct_reads": 17096,
+          "median_loop_seconds": 4.681072875,
+          "all_loop_seconds": [
+            4.681072875
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "hybrid_arc": {
+          "direct_reads": 15718,
+          "median_loop_seconds": 4.232539774,
+          "all_loop_seconds": [
+            4.232539774
+          ],
+          "tree_nodes_evaluated": 1508994,
+          "read_reduction_vs_parent_pct": 4.699,
+          "read_reduction_vs_second_touch_pct": 8.06
+        },
+        "s3fifo": {
+          "direct_reads": 15406,
+          "median_loop_seconds": 4.06005689,
+          "all_loop_seconds": [
+            4.06005689
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "second_touch_s3fifo": {
+          "direct_reads": 15979,
+          "median_loop_seconds": 4.284044045,
+          "all_loop_seconds": [
+            4.284044045
+          ],
+          "tree_nodes_evaluated": 0
+        },
+        "hybrid_s3fifo": {
+          "direct_reads": 15177,
+          "median_loop_seconds": 4.133384807,
+          "all_loop_seconds": [
+            4.133384807
+          ],
+          "tree_nodes_evaluated": 1461119,
+          "read_reduction_vs_parent_pct": 1.486,
+          "read_reduction_vs_second_touch_pct": 5.019
+        }
+      }
+    }
+  }
+}

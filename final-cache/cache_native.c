@@ -134,9 +134,9 @@ static void arc_insert(Slot *slots,int cap,int key,const unsigned char *buffer,
     memcpy(slots[place].bytes,buffer,4096);
 }
 int main(int argc,char **argv) {
-    if(argc!=4 && argc!=6) { fprintf(stderr,"usage: %s test_trace.txt model.txt repeats [policy --sync]\n",argv[0]); return 2; }
+    if(argc!=4 && argc!=6 && argc!=8 && argc!=10) { fprintf(stderr,"usage: %s test_trace.txt model.txt repeats [policy --sync [--capacity entries [--threshold probability]]]\n",argv[0]); return 2; }
     int only_policy=-1;
-    if(argc==6) {
+    if(argc>=6) {
         if(strcmp(argv[4],"lru")==0) only_policy=0;
         else if(strcmp(argv[4],"second_touch")==0) only_policy=1;
         else if(strcmp(argv[4],"ml")==0) only_policy=2;
@@ -146,6 +146,8 @@ int main(int argc,char **argv) {
         else if(strcmp(argv[4],"arc")==0) only_policy=6;
         else if(strcmp(argv[4],"hybrid_arc")==0) only_policy=7;
         else if(strcmp(argv[4],"hybrid_s3fifo")==0) only_policy=8;
+        else if(strcmp(argv[4],"second_touch_arc")==0) only_policy=9;
+        else if(strcmp(argv[4],"second_touch_s3fifo")==0) only_policy=10;
         else { fprintf(stderr,"unknown policy\n");return 2; }
         if(strcmp(argv[5],"--sync")!=0) { fprintf(stderr,"expected --sync\n");return 2; }
     }
@@ -160,6 +162,20 @@ int main(int argc,char **argv) {
     f=fopen(argv[2],"r"); if(!f)die("model open");
     int trees,cap,total; double base,threshold;
     if(fscanf(f,"%d %lf %lf %d %d",&trees,&base,&threshold,&cap,&total)!=5)die("model header");
+    if(argc>=8) {
+        if(strcmp(argv[6],"--capacity")!=0) { fprintf(stderr,"expected --capacity\n");return 2; }
+        char *end=NULL; long requested=strtol(argv[7],&end,10);
+        if(!argv[7][0] || *end || requested<2 || requested>65536) { fprintf(stderr,"invalid capacity\n");return 2; }
+        cap=(int)requested;
+    }
+    if(argc==10) {
+        if(strcmp(argv[8],"--threshold")!=0) { fprintf(stderr,"expected --threshold\n");return 2; }
+        char *end=NULL; double requested=strtod(argv[9],&end);
+        if(!argv[9][0] || *end || !isfinite(requested) || requested<=0.0 || requested>=1.0) {
+            fprintf(stderr,"invalid threshold\n");return 2;
+        }
+        threshold=requested;
+    }
     Node *nodes=calloc(total,sizeof(*nodes)); int *off=calloc(trees,sizeof(*off));
     if(!nodes||!off)die("model alloc");
     int at=0;
@@ -201,7 +217,7 @@ int main(int argc,char **argv) {
         if(rep)putchar(',');
         putchar('[');
         for(int p=0;p<(only_policy>=0?1:5);p++) {
-            int policy=only_policy>=0?only_policy:(p+rep)%5; const char *name=policy==0?"lru":policy==1?"second_touch":policy==2?"ml":policy==3?"two_queue":policy==4?"s3fifo":policy==5?"tiny_lfu":policy==6?"arc":policy==7?"hybrid_arc":"hybrid_s3fifo";
+            int policy=only_policy>=0?only_policy:(p+rep)%5; const char *name=policy==0?"lru":policy==1?"second_touch":policy==2?"ml":policy==3?"two_queue":policy==4?"s3fifo":policy==5?"tiny_lfu":policy==6?"arc":policy==7?"hybrid_arc":policy==8?"hybrid_s3fifo":policy==9?"second_touch_arc":"second_touch_s3fifo";
             memset(cache,0,cap*sizeof(*cache)); for(int c=0;c<cap;c++)cache[c].id=-1;
             for(int c=0;c<cap;c++){ghost[c]=-1;ghost2[c]=-1;}
             memset(count,0,keys*sizeof(int)); memset(frequency,0,keys*sizeof(int)); memset(hostcount,0,hosts*sizeof(int)); for(int k=0;k<keys;k++)last[k]=-1;
@@ -210,11 +226,11 @@ int main(int argc,char **argv) {
                 if(policy==5){if(i&&i%4096==0)for(int k=0;k<keys;k++)frequency[k]/=2;frequency[r.id]++;}
                 for(int c=0;c<cap;c++)if(cache[c].id==r.id){pos=c;break;}
                 uint64_t v;
-                if(pos>=0) { hits++;if(policy==4||policy==8){if(cache[pos].freq<3)cache[pos].freq++;}else if(policy==6||policy==7){cache[pos].queue=2;cache[pos].tick=++clocktick;}else{cache[pos].tick=(uint64_t)i+1;if(policy==3)cache[pos].queue=2;} memcpy(&v,cache[pos].bytes,sizeof(v)); }
+                if(pos>=0) { hits++;if(policy==4||policy==8||policy==10){if(cache[pos].freq<3)cache[pos].freq++;}else if(policy==6||policy==7||policy==9){cache[pos].queue=2;cache[pos].tick=++clocktick;}else{cache[pos].tick=(uint64_t)i+1;if(policy==3)cache[pos].queue=2;} memcpy(&v,cache[pos].bytes,sizeof(v)); }
                 else {
                     misses++; if(pread(readfd,buffer,4096,(off_t)r.id*4096)!=4096)die("direct pread");
                     memcpy(&v,buffer,sizeof(v)); if(v!=marker(r.id))die("backing data mismatch");
-                    int admit=policy==0 || policy==3 || policy==4 || policy==5 || policy==6 || (policy==1 && count[r.id]>=1);
+                    int admit=policy==0 || policy==3 || policy==4 || policy==5 || policy==6 || ((policy==1||policy==9||policy==10) && count[r.id]>=1);
                     if(policy==5){int victim=-1;uint64_t oldest=UINT64_MAX;int full=1;
                         for(int c=0;c<cap;c++)if(cache[c].id<0){full=0;break;}
                         if(full){for(int c=0;c<cap;c++)if(cache[c].tick<oldest){oldest=cache[c].tick;victim=c;}
@@ -226,8 +242,8 @@ int main(int argc,char **argv) {
                         admit=predict_early(x,nodes,off,trees,base,cutoff,min_tail,max_tail,&tree_evals);
                     }
                     if(policy==4) s3_insert(cache,cap,r.id,buffer,ghost,ghost_tick,&clocktick);
-                    else if(policy==8&&admit) s3_insert(cache,cap,r.id,buffer,ghost,ghost_tick,&clocktick);
-                    else if((policy==6||policy==7)&&admit) arc_insert(cache,cap,r.id,buffer,ghost,ghost_tick,ghost2,ghost_tick2,&arc_target,&clocktick);
+                    else if((policy==8||policy==10)&&admit) s3_insert(cache,cap,r.id,buffer,ghost,ghost_tick,&clocktick);
+                    else if((policy==6||policy==7||policy==9)&&admit) arc_insert(cache,cap,r.id,buffer,ghost,ghost_tick,ghost2,ghost_tick2,&arc_target,&clocktick);
                     else if(admit) { int victim=-1; uint64_t oldest=UINT64_MAX; int new_queue=0;
                         if(policy==3) {
                             new_queue=1;
