@@ -1,0 +1,50 @@
+{
+  "capacity_entries": 512,
+  "chosen": {
+    "stages": 100,
+    "threshold": 0.2,
+    "misses": {
+      "scripted": 4809,
+      "llm": 13488,
+      "nasa_july": 6151
+    },
+    "worst_ratio": 0.940061332589908,
+    "mean_ratio": 0.9107246659787925
+  },
+  "validation": {
+    "scripted": {
+      "lru": 5536,
+      "second_touch": 6722,
+      "two_queue": 5646,
+      "tinylfu": 11302
+    },
+    "llm": {
+      "lru": 15327,
+      "second_touch": 14541,
+      "two_queue": 14348,
+      "tinylfu": 25277
+    },
+    "nasa_july": {
+      "lru": 7255,
+      "second_touch": 7046,
+      "two_queue": 7070,
+      "tinylfu": 6661
+    }
+  },
+  "train_val_counts": {
+    "scripted": [
+      49473,
+      16491
+    ],
+    "llm": [
+      214669,
+      71556
+    ],
+    "nasa_july": [
+      150000,
+      50000
+    ]
+  },
+  "nasa_july_tail_excluded": 100000,
+  "note": "Exploratory after observing old model fail on July tail; August is subsequent untouched test."
+}

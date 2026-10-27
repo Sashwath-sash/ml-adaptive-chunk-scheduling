@@ -1,0 +1,517 @@
+{
+  "selection_splits": [
+    "BrowseTrace A val",
+    "BrowseTrace B val",
+    "NASA July val"
+  ],
+  "capacities": {
+    "256": {
+      "arc": {
+        "chosen": {
+          "threshold": 0.05,
+          "worst_ratio": 1.0161476868327401,
+          "mean_ratio": 1.00538256227758
+        },
+        "ranking": [
+          {
+            "threshold": 0.05,
+            "worst_ratio": 1.0161476868327401,
+            "mean_ratio": 1.00538256227758
+          },
+          {
+            "threshold": 0.1,
+            "worst_ratio": 1.0269572953736654,
+            "mean_ratio": 1.016265854725658
+          },
+          {
+            "threshold": 0.15,
+            "worst_ratio": 1.0321788575859394,
+            "mean_ratio": 1.017895941973113
+          },
+          {
+            "threshold": 0.2,
+            "worst_ratio": 1.0209356422848281,
+            "mean_ratio": 1.0038006390163394
+          },
+          {
+            "threshold": 0.3,
+            "worst_ratio": 1.0223309608540925,
+            "mean_ratio": 0.9912364563972659
+          },
+          {
+            "threshold": 0.4,
+            "worst_ratio": 1.0285142348754448,
+            "mean_ratio": 0.9754439246562097
+          },
+          {
+            "threshold": 0.5,
+            "worst_ratio": 1.027891459074733,
+            "mean_ratio": 0.9556951653149762
+          }
+        ],
+        "validation": {
+          "BrowseTrace A val": {
+            "parent_reads": 7738,
+            "ml_reads": {
+              "0.05": 7738,
+              "0.1": 7907,
+              "0.15": 7987,
+              "0.2": 7900,
+              "0.3": 7804,
+              "0.4": 7544,
+              "0.5": 7086
+            }
+          },
+          "BrowseTrace B val": {
+            "parent_reads": 22480,
+            "ml_reads": {
+              "0.05": 22843,
+              "0.1": 23086,
+              "0.15": 23063,
+              "0.2": 22907,
+              "0.3": 22982,
+              "0.4": 23121,
+              "0.5": 23107
+            }
+          },
+          "NASA July val": {
+            "parent_reads": 10621,
+            "ml_reads": {
+              "0.05": 10621,
+              "0.1": 10621,
+              "0.15": 10574,
+              "0.2": 10318,
+              "0.3": 10014,
+              "0.4": 9802,
+              "0.5": 9808
+            }
+          }
+        }
+      },
+      "s3fifo": {
+        "chosen": {
+          "threshold": 0.3,
+          "worst_ratio": 0.9984634296250768,
+          "mean_ratio": 0.9797884893815443
+        },
+        "ranking": [
+          {
+            "threshold": 0.05,
+            "worst_ratio": 1.0039628482972136,
+            "mean_ratio": 1.0008965633288545
+          },
+          {
+            "threshold": 0.1,
+            "worst_ratio": 1.0137461300309598,
+            "mean_ratio": 1.0033381530401442
+          },
+          {
+            "threshold": 0.15,
+            "worst_ratio": 0.9988854489164086,
+            "mean_ratio": 0.9976772989774148
+          },
+          {
+            "threshold": 0.2,
+            "worst_ratio": 1.0026341206427254,
+            "mean_ratio": 0.9861877695181822
+          },
+          {
+            "threshold": 0.3,
+            "worst_ratio": 0.9984634296250768,
+            "mean_ratio": 0.9797884893815443
+          },
+          {
+            "threshold": 0.4,
+            "worst_ratio": 1.0020633945034683,
+            "mean_ratio": 0.9731494589515314
+          },
+          {
+            "threshold": 0.5,
+            "worst_ratio": 1.0316533497234173,
+            "mean_ratio": 0.9866514430317236
+          }
+        ],
+        "validation": {
+          "BrowseTrace A val": {
+            "parent_reads": 8075,
+            "ml_reads": {
+              "0.05": 8107,
+              "0.1": 8186,
+              "0.15": 8066,
+              "0.2": 7874,
+              "0.3": 7800,
+              "0.4": 7643,
+              "0.5": 7683
+            }
+          },
+          "BrowseTrace B val": {
+            "parent_reads": 22778,
+            "ml_reads": {
+              "0.05": 22749,
+              "0.1": 22693,
+              "0.15": 22742,
+              "0.2": 22838,
+              "0.3": 22743,
+              "0.4": 22825,
+              "0.5": 23499
+            }
+          },
+          "NASA July val": {
+            "parent_reads": 10063,
+            "ml_reads": {
+              "0.05": 10063,
+              "0.1": 10063,
+              "0.15": 10020,
+              "0.2": 9870,
+              "0.3": 9811,
+              "0.4": 9770,
+              "0.5": 9830
+            }
+          }
+        }
+      }
+    },
+    "512": {
+      "arc": {
+        "chosen": {
+          "threshold": 0.3,
+          "worst_ratio": 0.9719784449576597,
+          "mean_ratio": 0.9703708758774136
+        },
+        "ranking": [
+          {
+            "threshold": 0.05,
+            "worst_ratio": 1.0,
+            "mean_ratio": 0.993820966819137
+          },
+          {
+            "threshold": 0.1,
+            "worst_ratio": 1.0121009092773638,
+            "mean_ratio": 0.9877414762502276
+          },
+          {
+            "threshold": 0.15,
+            "worst_ratio": 1.0098448075476858,
+            "mean_ratio": 0.9635927914339376
+          },
+          {
+            "threshold": 0.2,
+            "worst_ratio": 1.0101182744240105,
+            "mean_ratio": 0.9597983542932894
+          },
+          {
+            "threshold": 0.3,
+            "worst_ratio": 0.9719784449576597,
+            "mean_ratio": 0.9703708758774136
+          },
+          {
+            "threshold": 0.4,
+            "worst_ratio": 1.0483448806774442,
+            "mean_ratio": 1.006999897400591
+          },
+          {
+            "threshold": 0.5,
+            "worst_ratio": 1.127944572748268,
+            "mean_ratio": 1.1000426245383161
+          }
+        ],
+        "validation": {
+          "BrowseTrace A val": {
+            "parent_reads": 5290,
+            "ml_reads": {
+              "0.05": 5214,
+              "0.1": 5029,
+              "0.15": 4990,
+              "0.2": 5022,
+              "0.3": 5138,
+              "0.4": 5358,
+              "0.5": 5824
+            }
+          },
+          "BrowseTrace B val": {
+            "parent_reads": 14627,
+            "ml_reads": {
+              "0.05": 14566,
+              "0.1": 14804,
+              "0.15": 14771,
+              "0.2": 14775,
+              "0.3": 14157,
+              "0.4": 14039,
+              "0.5": 15669
+            }
+          },
+          "NASA July val": {
+            "parent_reads": 6495,
+            "ml_reads": {
+              "0.05": 6495,
+              "0.1": 6498,
+              "0.15": 6090,
+              "0.2": 5975,
+              "0.3": 6313,
+              "0.4": 6809,
+              "0.5": 7326
+            }
+          }
+        }
+      },
+      "s3fifo": {
+        "chosen": {
+          "threshold": 0.2,
+          "worst_ratio": 0.9724310776942355,
+          "mean_ratio": 0.9437317133331359
+        },
+        "ranking": [
+          {
+            "threshold": 0.05,
+            "worst_ratio": 1.0,
+            "mean_ratio": 0.9799107339606096
+          },
+          {
+            "threshold": 0.1,
+            "worst_ratio": 1.0,
+            "mean_ratio": 0.9672923867317899
+          },
+          {
+            "threshold": 0.15,
+            "worst_ratio": 0.9863769056114174,
+            "mean_ratio": 0.9554184863376195
+          },
+          {
+            "threshold": 0.2,
+            "worst_ratio": 0.9724310776942355,
+            "mean_ratio": 0.9437317133331359
+          },
+          {
+            "threshold": 0.3,
+            "worst_ratio": 1.029192345118391,
+            "mean_ratio": 0.9624677685897867
+          },
+          {
+            "threshold": 0.4,
+            "worst_ratio": 1.1060655205968213,
+            "mean_ratio": 1.00738187715809
+          },
+          {
+            "threshold": 0.5,
+            "worst_ratio": 1.1865066493674992,
+            "mean_ratio": 1.0802392201415494
+          }
+        ],
+        "validation": {
+          "BrowseTrace A val": {
+            "parent_reads": 7047,
+            "ml_reads": {
+              "0.05": 6797,
+              "0.1": 6630,
+              "0.15": 6485,
+              "0.2": 6246,
+              "0.3": 6086,
+              "0.4": 6279,
+              "0.5": 6787
+            }
+          },
+          "BrowseTrace B val": {
+            "parent_reads": 14763,
+            "ml_reads": {
+              "0.05": 14397,
+              "0.1": 14188,
+              "0.15": 14167,
+              "0.2": 14356,
+              "0.3": 14683,
+              "0.4": 15133,
+              "0.5": 16108
+            }
+          },
+          "NASA July val": {
+            "parent_reads": 6166,
+            "ml_reads": {
+              "0.05": 6166,
+              "0.1": 6166,
+              "0.15": 6082,
+              "0.2": 5996,
+              "0.3": 6346,
+              "0.4": 6820,
+              "0.5": 7316
+            }
+          }
+        }
+      }
+    },
+    "1024": {
+      "arc": {
+        "chosen": {
+          "threshold": 0.1,
+          "worst_ratio": 1.005062680810029,
+          "mean_ratio": 1.0031362357666984
+        },
+        "ranking": [
+          {
+            "threshold": 0.05,
+            "worst_ratio": 1.0136210221793636,
+            "mean_ratio": 1.0050922171061456
+          },
+          {
+            "threshold": 0.1,
+            "worst_ratio": 1.005062680810029,
+            "mean_ratio": 1.0031362357666984
+          },
+          {
+            "threshold": 0.15,
+            "worst_ratio": 1.0451835582052087,
+            "mean_ratio": 1.0204966628321188
+          },
+          {
+            "threshold": 0.2,
+            "worst_ratio": 1.1615939755255726,
+            "mean_ratio": 1.0722538633382142
+          },
+          {
+            "threshold": 0.3,
+            "worst_ratio": 1.520866018198933,
+            "mean_ratio": 1.2127957827314664
+          },
+          {
+            "threshold": 0.4,
+            "worst_ratio": 1.9805459679949795,
+            "mean_ratio": 1.413405969185245
+          },
+          {
+            "threshold": 0.5,
+            "worst_ratio": 2.2742390963288357,
+            "mean_ratio": 1.6252659514664762
+          }
+        ],
+        "validation": {
+          "BrowseTrace A val": {
+            "parent_reads": 4832,
+            "ml_reads": {
+              "0.05": 4840,
+              "0.1": 4853,
+              "0.15": 4884,
+              "0.2": 4925,
+              "0.3": 5090,
+              "0.4": 5308,
+              "0.5": 5805
+            }
+          },
+          "BrowseTrace B val": {
+            "parent_reads": 8296,
+            "ml_reads": {
+              "0.05": 8409,
+              "0.1": 8338,
+              "0.15": 8342,
+              "0.2": 8594,
+              "0.3": 8828,
+              "0.4": 9633,
+              "0.5": 11616
+            }
+          },
+          "NASA July val": {
+            "parent_reads": 3187,
+            "ml_reads": {
+              "0.05": 3187,
+              "0.1": 3187,
+              "0.15": 3331,
+              "0.2": 3702,
+              "0.3": 4847,
+              "0.4": 6312,
+              "0.5": 7248
+            }
+          }
+        }
+      },
+      "s3fifo": {
+        "chosen": {
+          "threshold": 0.1,
+          "worst_ratio": 0.9993802293151534,
+          "mean_ratio": 0.9637335130728251
+        },
+        "ranking": [
+          {
+            "threshold": 0.05,
+            "worst_ratio": 1.0,
+            "mean_ratio": 0.9804582121116687
+          },
+          {
+            "threshold": 0.1,
+            "worst_ratio": 0.9993802293151534,
+            "mean_ratio": 0.9637335130728251
+          },
+          {
+            "threshold": 0.15,
+            "worst_ratio": 1.044933374651379,
+            "mean_ratio": 0.9761680038098505
+          },
+          {
+            "threshold": 0.2,
+            "worst_ratio": 1.1450263402541059,
+            "mean_ratio": 1.0192303627502632
+          },
+          {
+            "threshold": 0.3,
+            "worst_ratio": 1.5020142547257516,
+            "mean_ratio": 1.1571900568966098
+          },
+          {
+            "threshold": 0.4,
+            "worst_ratio": 1.9559962813758909,
+            "mean_ratio": 1.3670609276255108
+          },
+          {
+            "threshold": 0.5,
+            "worst_ratio": 2.246048961884103,
+            "mean_ratio": 1.5649343506358424
+          }
+        ],
+        "validation": {
+          "BrowseTrace A val": {
+            "parent_reads": 5495,
+            "ml_reads": {
+              "0.05": 5271,
+              "0.1": 5037,
+              "0.15": 5018,
+              "0.2": 5051,
+              "0.3": 5138,
+              "0.4": 5364,
+              "0.5": 5834
+            }
+          },
+          "BrowseTrace B val": {
+            "parent_reads": 9182,
+            "ml_reads": {
+              "0.05": 9018,
+              "0.1": 8954,
+              "0.15": 8910,
+              "0.2": 9122,
+              "0.3": 9499,
+              "0.4": 10734,
+              "0.5": 12736
+            }
+          },
+          "NASA July val": {
+            "parent_reads": 3227,
+            "ml_reads": {
+              "0.05": 3227,
+              "0.1": 3225,
+              "0.15": 3372,
+              "0.2": 3695,
+              "0.3": 4847,
+              "0.4": 6312,
+              "0.5": 7248
+            }
+          }
+        }
+      }
+    }
+  },
+  "threshold_candidates": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "objective": "minimize worst validation ratio to unfiltered parent; mean ratio breaks ties"
+}

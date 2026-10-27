@@ -1,0 +1,10 @@
+{
+  "source_url": "https://github.com/greymd/NASA-HTTP/blob/master/NASA_access_log_Jul95.gz",
+  "source_sha256": "199109ed0f273e095da6ccd5fc9dc4cd8bb58daa06d62135e62090fea9d27488",
+  "matched_get_200_requests": 1692590,
+  "selected_last_requests": 300000,
+  "derived_sha256": "95b35739de5a053825340b4516e623e75b3a787e0691f5abd9f2dda8e9e1eea9",
+  "selection": "last 300000 valid GET 200 requests, original order",
+  "privacy": "client hosts and timestamps omitted; URL path and response bytes retained",
+  "caveat": "External 1995 web-server request trace; not representative of modern OS workloads."
+}

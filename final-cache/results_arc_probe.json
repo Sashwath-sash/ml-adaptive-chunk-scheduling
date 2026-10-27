@@ -1,0 +1,14 @@
+{
+  "scripted": {
+    "requests": 16491,
+    "arc_direct_reads": 7430
+  },
+  "llm": {
+    "requests": 71557,
+    "arc_direct_reads": 17913
+  },
+  "nasa_aug": {
+    "requests": 100000,
+    "arc_direct_reads": 8792
+  }
+}

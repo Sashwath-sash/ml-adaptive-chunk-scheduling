@@ -1,0 +1,178 @@
+{
+  "scripted": {
+    "arc": {
+      "policy": "arc",
+      "wall_seconds": 8.4747384,
+      "hits": 9061,
+      "direct_reads": 7430,
+      "direct_bytes_requested": 30433280,
+      "tree_nodes_evaluated": 0,
+      "prefix_misses": [
+        469,
+        1299,
+        2505
+      ],
+      "checksum": "30b2b07c951d794b"
+    },
+    "hybrid_arc": {
+      "policy": "hybrid_arc",
+      "wall_seconds": 2.021267649,
+      "hits": 9387,
+      "direct_reads": 7104,
+      "direct_bytes_requested": 29097984,
+      "tree_nodes_evaluated": 625420,
+      "prefix_misses": [
+        469,
+        1167,
+        2242
+      ],
+      "checksum": "30b2b07c951d794b"
+    },
+    "hybrid_s3fifo": {
+      "policy": "hybrid_s3fifo",
+      "wall_seconds": 2.337153315,
+      "hits": 9155,
+      "direct_reads": 7336,
+      "direct_bytes_requested": 30048256,
+      "tree_nodes_evaluated": 642057,
+      "prefix_misses": [
+        469,
+        1163,
+        2138
+      ],
+      "checksum": "30b2b07c951d794b"
+    }
+  },
+  "llm": {
+    "arc": {
+      "policy": "arc",
+      "wall_seconds": 5.157700407,
+      "hits": 53644,
+      "direct_reads": 17913,
+      "direct_bytes_requested": 73371648,
+      "tree_nodes_evaluated": 0,
+      "prefix_misses": [
+        408,
+        562,
+        738
+      ],
+      "checksum": "61106f348a8cc339"
+    },
+    "hybrid_arc": {
+      "policy": "hybrid_arc",
+      "wall_seconds": 6.639553332,
+      "hits": 53817,
+      "direct_reads": 17740,
+      "direct_bytes_requested": 72663040,
+      "tree_nodes_evaluated": 1623249,
+      "prefix_misses": [
+        408,
+        562,
+        738
+      ],
+      "checksum": "61106f348a8cc339"
+    },
+    "hybrid_s3fifo": {
+      "policy": "hybrid_s3fifo",
+      "wall_seconds": 7.926112889,
+      "hits": 52971,
+      "direct_reads": 18586,
+      "direct_bytes_requested": 76128256,
+      "tree_nodes_evaluated": 1694387,
+      "prefix_misses": [
+        408,
+        652,
+        872
+      ],
+      "checksum": "61106f348a8cc339"
+    }
+  },
+  "nasa_aug": {
+    "arc": {
+      "policy": "arc",
+      "wall_seconds": 2.647138177,
+      "hits": 91208,
+      "direct_reads": 8792,
+      "direct_bytes_requested": 36012032,
+      "tree_nodes_evaluated": 0,
+      "prefix_misses": [
+        306,
+        444,
+        645
+      ],
+      "checksum": "921b399bc4cddab3"
+    },
+    "hybrid_arc": {
+      "policy": "hybrid_arc",
+      "wall_seconds": 2.688464145,
+      "hits": 91870,
+      "direct_reads": 8130,
+      "direct_bytes_requested": 33300480,
+      "tree_nodes_evaluated": 778826,
+      "prefix_misses": [
+        307,
+        445,
+        655
+      ],
+      "checksum": "921b399bc4cddab3"
+    },
+    "hybrid_s3fifo": {
+      "policy": "hybrid_s3fifo",
+      "wall_seconds": 3.127564595,
+      "hits": 91952,
+      "direct_reads": 8048,
+      "direct_bytes_requested": 32964608,
+      "tree_nodes_evaluated": 770738,
+      "prefix_misses": [
+        307,
+        445,
+        655
+      ],
+      "checksum": "921b399bc4cddab3"
+    }
+  },
+  "calgary": {
+    "arc": {
+      "policy": "arc",
+      "wall_seconds": 5.378203707,
+      "hits": 83507,
+      "direct_reads": 16493,
+      "direct_bytes_requested": 67555328,
+      "tree_nodes_evaluated": 0,
+      "prefix_misses": [
+        288,
+        452,
+        779
+      ],
+      "checksum": "33a73d3f7e7328ce"
+    },
+    "hybrid_arc": {
+      "policy": "hybrid_arc",
+      "wall_seconds": 5.556872906,
+      "hits": 84282,
+      "direct_reads": 15718,
+      "direct_bytes_requested": 64380928,
+      "tree_nodes_evaluated": 1508994,
+      "prefix_misses": [
+        292,
+        462,
+        778
+      ],
+      "checksum": "33a73d3f7e7328ce"
+    },
+    "hybrid_s3fifo": {
+      "policy": "hybrid_s3fifo",
+      "wall_seconds": 4.945893215,
+      "hits": 84823,
+      "direct_reads": 15177,
+      "direct_bytes_requested": 62164992,
+      "tree_nodes_evaluated": 1461119,
+      "prefix_misses": [
+        292,
+        462,
+        789
+      ],
+      "checksum": "33a73d3f7e7328ce"
+    }
+  }
+}

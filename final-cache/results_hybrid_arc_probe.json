@@ -1,0 +1,34 @@
+{
+  "scripted": {
+    "requests": 16491,
+    "arc": 7430,
+    "ml_only": 6827,
+    "hybrid_arc_ml": 7104,
+    "s3fifo": 7773,
+    "hybrid_s3fifo_ml": 7336
+  },
+  "llm": {
+    "requests": 71557,
+    "arc": 17913,
+    "ml_only": 18501,
+    "hybrid_arc_ml": 17740,
+    "s3fifo": 18950,
+    "hybrid_s3fifo_ml": 18586
+  },
+  "nasa_aug": {
+    "requests": 100000,
+    "arc": 8792,
+    "ml_only": 8270,
+    "hybrid_arc_ml": 8130,
+    "s3fifo": 8349,
+    "hybrid_s3fifo_ml": 8048
+  },
+  "calgary": {
+    "requests": 100000,
+    "arc": 16493,
+    "ml_only": 16249,
+    "hybrid_arc_ml": 15718,
+    "s3fifo": 15406,
+    "hybrid_s3fifo_ml": 15177
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "total_capacity_entries": 1024,
+  "method": "Each worker has a private cache; validate static split on 60-80%, test on 80-100%. Offline miss-count probe, not online quota controller.",
+  "summary": {
+    "lru": {
+      "validation_selected_a_entries": 384,
+      "validation_total_misses": 18366,
+      "test_selected_total_misses": 26724,
+      "test_equal_total_misses": 28506,
+      "test_curve": {
+        "128": 25146,
+        "256": 25572,
+        "384": 26724,
+        "512": 28506,
+        "640": 31448,
+        "768": 36048,
+        "896": 44624
+      }
+    },
+    "second_touch": {
+      "validation_selected_a_entries": 256,
+      "validation_total_misses": 19174,
+      "test_selected_total_misses": 25097,
+      "test_equal_total_misses": 26752,
+      "test_curve": {
+        "128": 25643,
+        "256": 25097,
+        "384": 25175,
+        "512": 26752,
+        "640": 30035,
+        "768": 36478,
+        "896": 45261
+      }
+    },
+    "two_queue": {
+      "validation_selected_a_entries": 256,
+      "validation_total_misses": 18387,
+      "test_selected_total_misses": 24285,
+      "test_equal_total_misses": 26338,
+      "test_curve": {
+        "128": 23950,
+        "256": 24285,
+        "384": 24849,
+        "512": 26338,
+        "640": 29274,
+        "768": 33802,
+        "896": 41475
+      }
+    },
+    "ml": {
+      "validation_selected_a_entries": 256,
+      "validation_total_misses": 17288,
+      "test_selected_total_misses": 24118,
+      "test_equal_total_misses": 25328,
+      "test_curve": {
+        "128": 23854,
+        "256": 24118,
+        "384": 23825,
+        "512": 25328,
+        "640": 28696,
+        "768": 34724,
+        "896": 43766
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "browsetrace_a": {
+    "requests": 16491,
+    "positive_fraction": 0.5760111576011158,
+    "roc_auc": 0.8617975684782427,
+    "average_precision": 0.8528761552866344,
+    "brier_score": 0.14262846935396684,
+    "log_loss": 0.44340525641166667,
+    "threshold": 0.2,
+    "tp": 9429,
+    "fp": 3674,
+    "fn": 70,
+    "tn": 3318,
+    "precision": 0.7196061970541098,
+    "recall": 0.9926308032424466
+  },
+  "browsetrace_b": {
+    "requests": 71557,
+    "positive_fraction": 0.7217463001523261,
+    "roc_auc": 0.8163170355458158,
+    "average_precision": 0.9199597753486034,
+    "brier_score": 0.15001955287935909,
+    "log_loss": 0.4539267220141448,
+    "threshold": 0.2,
+    "tp": 51468,
+    "fp": 17684,
+    "fn": 178,
+    "tn": 2227,
+    "precision": 0.7442734844979176,
+    "recall": 0.9965534600937149
+  },
+  "nasa_august": {
+    "requests": 100000,
+    "positive_fraction": 0.83581,
+    "roc_auc": 0.9617814882125739,
+    "average_precision": 0.9925004588520157,
+    "brier_score": 0.05816775836081871,
+    "log_loss": 0.18435655962345218,
+    "threshold": 0.2,
+    "tp": 82797,
+    "fp": 10760,
+    "fn": 784,
+    "tn": 5659,
+    "precision": 0.8849898992058317,
+    "recall": 0.990619877723406
+  },
+  "calgary": {
+    "requests": 100000,
+    "positive_fraction": 0.76063,
+    "roc_auc": 0.8889224199456286,
+    "average_precision": 0.9646144303253237,
+    "brier_score": 0.11813983503932772,
+    "log_loss": 0.3530596899426206,
+    "threshold": 0.2,
+    "tp": 74657,
+    "fp": 18061,
+    "fn": 1406,
+    "tn": 5876,
+    "precision": 0.8052050303069522,
+    "recall": 0.9815153228245007
+  }
+}

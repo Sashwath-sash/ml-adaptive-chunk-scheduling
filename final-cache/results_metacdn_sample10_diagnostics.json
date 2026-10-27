@@ -1,0 +1,26 @@
+{
+  "source_sha256": "f5818401662c558240645a015dfbf47515c0d00feb0af6dfe7afd7938de7f3b2",
+  "rows": 100000,
+  "unique_keys": 51875,
+  "positive_fraction_future_1024": 0.37045,
+  "score_mean": 0.2932801863355845,
+  "score_quantiles_0_10_50_90_100": [
+    0.1103583998127423,
+    0.1306293873009891,
+    0.1596819963725321,
+    0.7055703726679113,
+    0.9984742033264833
+  ],
+  "admit_fraction_threshold_0_2": 0.41554,
+  "roc_auc": 0.802743190700061,
+  "average_precision": 0.7733589942213752,
+  "precision_threshold_0_2": 0.649251576262213,
+  "recall_threshold_0_2": 0.7282764205695775,
+  "independent_reference_read_counts": {
+    "arc": 62532,
+    "hybrid_arc": 69720,
+    "s3fifo": 61628,
+    "hybrid_s3fifo": 69646
+  },
+  "scope": "Key-only, sampled, out-of-domain stress test; not a like-for-like CDN benchmark"
+}

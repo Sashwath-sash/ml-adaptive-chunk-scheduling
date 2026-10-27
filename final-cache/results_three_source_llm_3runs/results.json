@@ -1,0 +1,268 @@
+{
+  "requests": 71557,
+  "keys": 5106,
+  "capacity": 512,
+  "trees": 100,
+  "threshold": 0.2,
+  "repeats": [
+    [
+      {
+        "policy": "lru",
+        "wall_seconds": 3.963396245,
+        "hits": 51844,
+        "direct_reads": 19713,
+        "direct_bytes_requested": 80744448,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          408,
+          562,
+          752
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "second_touch",
+        "wall_seconds": 4.375722968,
+        "hits": 52348,
+        "direct_reads": 19209,
+        "direct_bytes_requested": 78680064,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          518,
+          896,
+          1093
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "ml",
+        "wall_seconds": 3.047678633,
+        "hits": 53056,
+        "direct_reads": 18501,
+        "direct_bytes_requested": 75780096,
+        "tree_nodes_evaluated": 1692737,
+        "prefix_misses": [
+          408,
+          562,
+          739
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "two_queue",
+        "wall_seconds": 3.055440344,
+        "hits": 52874,
+        "direct_reads": 18683,
+        "direct_bytes_requested": 76525568,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          436,
+          733,
+          944
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "s3fifo",
+        "wall_seconds": 3.337324048,
+        "hits": 52607,
+        "direct_reads": 18950,
+        "direct_bytes_requested": 77619200,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          408,
+          652,
+          891
+        ],
+        "checksum": "61106f348a8cc339"
+      }
+    ],
+    [
+      {
+        "policy": "second_touch",
+        "wall_seconds": 3.122307387,
+        "hits": 52348,
+        "direct_reads": 19209,
+        "direct_bytes_requested": 78680064,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          518,
+          896,
+          1093
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "ml",
+        "wall_seconds": 2.937111914,
+        "hits": 53056,
+        "direct_reads": 18501,
+        "direct_bytes_requested": 75780096,
+        "tree_nodes_evaluated": 1692737,
+        "prefix_misses": [
+          408,
+          562,
+          739
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "two_queue",
+        "wall_seconds": 3.034324938,
+        "hits": 52874,
+        "direct_reads": 18683,
+        "direct_bytes_requested": 76525568,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          436,
+          733,
+          944
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "s3fifo",
+        "wall_seconds": 3.173778746,
+        "hits": 52607,
+        "direct_reads": 18950,
+        "direct_bytes_requested": 77619200,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          408,
+          652,
+          891
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "lru",
+        "wall_seconds": 3.223650121,
+        "hits": 51844,
+        "direct_reads": 19713,
+        "direct_bytes_requested": 80744448,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          408,
+          562,
+          752
+        ],
+        "checksum": "61106f348a8cc339"
+      }
+    ],
+    [
+      {
+        "policy": "ml",
+        "wall_seconds": 3.088238673,
+        "hits": 53056,
+        "direct_reads": 18501,
+        "direct_bytes_requested": 75780096,
+        "tree_nodes_evaluated": 1692737,
+        "prefix_misses": [
+          408,
+          562,
+          739
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "two_queue",
+        "wall_seconds": 4.813510552,
+        "hits": 52874,
+        "direct_reads": 18683,
+        "direct_bytes_requested": 76525568,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          436,
+          733,
+          944
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "s3fifo",
+        "wall_seconds": 2.990174072,
+        "hits": 52607,
+        "direct_reads": 18950,
+        "direct_bytes_requested": 77619200,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          408,
+          652,
+          891
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "lru",
+        "wall_seconds": 3.032425781,
+        "hits": 51844,
+        "direct_reads": 19713,
+        "direct_bytes_requested": 80744448,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          408,
+          562,
+          752
+        ],
+        "checksum": "61106f348a8cc339"
+      },
+      {
+        "policy": "second_touch",
+        "wall_seconds": 2.936113513,
+        "hits": 52348,
+        "direct_reads": 19209,
+        "direct_bytes_requested": 78680064,
+        "tree_nodes_evaluated": 0,
+        "prefix_misses": [
+          518,
+          896,
+          1093
+        ],
+        "checksum": "61106f348a8cc339"
+      }
+    ]
+  ],
+  "summary": {
+    "lru": {
+      "median_wall_seconds": 3.223650121,
+      "range_wall_seconds": [
+        3.032425781,
+        3.963396245
+      ],
+      "direct_reads": 19713
+    },
+    "second_touch": {
+      "median_wall_seconds": 3.122307387,
+      "range_wall_seconds": [
+        2.936113513,
+        4.375722968
+      ],
+      "direct_reads": 19209
+    },
+    "two_queue": {
+      "median_wall_seconds": 3.055440344,
+      "range_wall_seconds": [
+        3.034324938,
+        4.813510552
+      ],
+      "direct_reads": 18683
+    },
+    "s3fifo": {
+      "median_wall_seconds": 3.173778746,
+      "range_wall_seconds": [
+        2.990174072,
+        3.337324048
+      ],
+      "direct_reads": 18950
+    },
+    "ml": {
+      "median_wall_seconds": 3.047678633,
+      "range_wall_seconds": [
+        2.937111914,
+        3.088238673
+      ],
+      "direct_reads": 18501
+    }
+  },
+  "method_note": "Full online C lookup, history, HGB prediction and O_DIRECT read are timed. Backing 4-KiB blocks are deterministic synthetic data mapped from real URL requests; reported bytes are direct-read bytes requested, not measured physical disk reads. Backing-file creation and model loading are excluded from request-loop timing."
+}

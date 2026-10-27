@@ -1,0 +1,166 @@
+{
+  "calgary": {
+    "arc": {
+      "direct_reads": 16493,
+      "median_loop_seconds": 2.835273622,
+      "range_loop_seconds": [
+        2.616798142,
+        4.476096745
+      ],
+      "tree_nodes_evaluated": 0,
+      "raw_runs": [
+        {
+          "policy": "arc",
+          "wall_seconds": 4.476096745,
+          "hits": 83507,
+          "direct_reads": 16493,
+          "direct_bytes_requested": 67555328,
+          "tree_nodes_evaluated": 0,
+          "prefix_misses": [
+            288,
+            452,
+            779
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        },
+        {
+          "policy": "arc",
+          "wall_seconds": 2.835273622,
+          "hits": 83507,
+          "direct_reads": 16493,
+          "direct_bytes_requested": 67555328,
+          "tree_nodes_evaluated": 0,
+          "prefix_misses": [
+            288,
+            452,
+            779
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        },
+        {
+          "policy": "arc",
+          "wall_seconds": 2.730135947,
+          "hits": 83507,
+          "direct_reads": 16493,
+          "direct_bytes_requested": 67555328,
+          "tree_nodes_evaluated": 0,
+          "prefix_misses": [
+            288,
+            452,
+            779
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        },
+        {
+          "policy": "arc",
+          "wall_seconds": 2.616798142,
+          "hits": 83507,
+          "direct_reads": 16493,
+          "direct_bytes_requested": 67555328,
+          "tree_nodes_evaluated": 0,
+          "prefix_misses": [
+            288,
+            452,
+            779
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        },
+        {
+          "policy": "arc",
+          "wall_seconds": 3.261708138,
+          "hits": 83507,
+          "direct_reads": 16493,
+          "direct_bytes_requested": 67555328,
+          "tree_nodes_evaluated": 0,
+          "prefix_misses": [
+            288,
+            452,
+            779
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        }
+      ]
+    },
+    "hybrid_arc": {
+      "direct_reads": 15718,
+      "median_loop_seconds": 2.583553872,
+      "range_loop_seconds": [
+        2.455052436,
+        4.090053672
+      ],
+      "tree_nodes_evaluated": 1508994,
+      "raw_runs": [
+        {
+          "policy": "hybrid_arc",
+          "wall_seconds": 4.090053672,
+          "hits": 84282,
+          "direct_reads": 15718,
+          "direct_bytes_requested": 64380928,
+          "tree_nodes_evaluated": 1508994,
+          "prefix_misses": [
+            292,
+            462,
+            778
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        },
+        {
+          "policy": "hybrid_arc",
+          "wall_seconds": 2.90933909,
+          "hits": 84282,
+          "direct_reads": 15718,
+          "direct_bytes_requested": 64380928,
+          "tree_nodes_evaluated": 1508994,
+          "prefix_misses": [
+            292,
+            462,
+            778
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        },
+        {
+          "policy": "hybrid_arc",
+          "wall_seconds": 2.554447685,
+          "hits": 84282,
+          "direct_reads": 15718,
+          "direct_bytes_requested": 64380928,
+          "tree_nodes_evaluated": 1508994,
+          "prefix_misses": [
+            292,
+            462,
+            778
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        },
+        {
+          "policy": "hybrid_arc",
+          "wall_seconds": 2.455052436,
+          "hits": 84282,
+          "direct_reads": 15718,
+          "direct_bytes_requested": 64380928,
+          "tree_nodes_evaluated": 1508994,
+          "prefix_misses": [
+            292,
+            462,
+            778
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        },
+        {
+          "policy": "hybrid_arc",
+          "wall_seconds": 2.583553872,
+          "hits": 84282,
+          "direct_reads": 15718,
+          "direct_bytes_requested": 64380928,
+          "tree_nodes_evaluated": 1508994,
+          "prefix_misses": [
+            292,
+            462,
+            778
+          ],
+          "checksum": "33a73d3f7e7328ce"
+        }
+      ]
+    }
+  }
+}

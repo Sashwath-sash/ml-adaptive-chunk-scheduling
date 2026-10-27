@@ -1,12 +1,18 @@
 # Machine-Learning-Assisted Adaptive Chunk Scheduling
 
+## Current Review 3 submission
+
+The completed project is **Machine Learning Assisted Adaptive Chunk Caching for I/O Workloads**. Start with the [Review 3 report PDF](final-cache/final_review_materials/output/Review3_Final_Submission_Refined_Sashwath_J.pdf) or its [editable Word copy](final-cache/final_review_materials/output/Review3_Final_Submission_Refined_Sashwath_J.docx). The runnable code, fixed native inputs, saved result JSON, verification scripts, and figure sources are in [final-cache](final-cache/). From that folder, `python demo_hybrid_final.py` checks the four-stream result, `python verify_admission_extension.py` checks the control and capacity study, and `python demo_hybrid_final.py --live calgary` compiles and replays a fresh Linux direct-I/O demonstration on a machine with WSL and GCC.
+
+At 512 cache entries, ML admission made 1.0% to 7.5% fewer direct-read calls than its unchanged ARC or local S3-FIFO parent in eight matched comparisons. The fixed model did not retain that advantage in every capacity test or on the separate key-only stress stream. The report explains the method, all 30 surveyed works, evidence, limitations, and the transition from the Review 2 CPU scheduling study.
+
 ## Final cache scope and review materials
 
 **Start here on a phone:** [Final cache viva guide](FINAL_CACHE_VIVA_GUIDE.md). It explains the problem, trained model, C inference, Linux role, eight features, datasets, measured comparisons, limitations, exact demo commands and likely reviewer questions. The [combined Review 2/3 PPT](final-cache/Review2_Review3_Combined_Project_Presentation.pptx), [illustrated technical report PDF](final-cache/Review3_Project_Technical_Report.pdf), [browseable key source files](final-cache/) and [complete evidence ZIP](final-cache/hybrid_cache_review_evidence_v12.zip) are available under `final-cache/`.
 
-**Research extension (27 October 2026):** [Read the full capacity and control study](final-cache/research-extension-2026-10-27/RESEARCH_STATUS.md) and [view its results figure](final-cache/research-extension-2026-10-27/capacity_read_reduction.png). The frozen ML filter beats both parent policies and cheap second-touch controls at 512 entries, but loses in several 256- and 1,024-entry tests. It also loses on a sampled, anonymized key-only MetaCDN stress stream. Validation-selected thresholds reduce most capacity failures; that follow-up is exploratory and does not establish a new general algorithm. The PPT and report above predate this study.
+**Research extension (27 October 2026):** [Read the capacity and control study](final-cache/research-extension-2026-10-27/RESEARCH_STATUS.md) and [view its results figure](final-cache/research-extension-2026-10-27/capacity_read_reduction.png). The frozen ML filter beats both parent policies and cheap second-touch controls at 512 entries, but loses in several 256- and 1,024-entry tests. It also loses on a sampled, anonymized key-only MetaCDN stress stream. Validation-selected thresholds reduce most capacity failures; that follow-up is exploratory. The new Review 3 report linked above includes this study; the older technical report and PPT in this folder predate it.
 
-The final scope is **Machine Learning Assisted Adaptive Chunk Caching for I/O Workloads**. It is a disclosed change from the older CPU scheduling work below. The final native cache reduces backing-file direct-read calls in its tested traces but is not a Linux kernel patch or a universal runtime speedup. The technical report and PPT do **not** yet meet the separate 30-paper final research-paper requirement.
+The final scope is **Machine Learning Assisted Adaptive Chunk Caching for I/O Workloads**. It is a disclosed change from the older CPU scheduling work below. The native cache reduces backing-file direct-read calls in the reported tests; it is a user-space prototype, not a Linux kernel patch.
 
 ## Historical Review 2 CPU scheduling project
 

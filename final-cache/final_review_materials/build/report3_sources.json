@@ -1,0 +1,303 @@
+[
+  {
+    "title": "A smart admission control and cache replacement approach in content delivery networks",
+    "year": 2023,
+    "doi": "https://doi.org/10.1007/s10586-023-04095-7",
+    "authors": [
+      "Lamis Abdo",
+      "Imtiaz Ahmad",
+      "Sa’ed Abed"
+    ],
+    "venue": "Cluster Computing",
+    "openalex": "https://openalex.org/W4383645891"
+  },
+  {
+    "title": "A Cache Admission Policy for Cloud Block Storage Using Deep Reinforcement Learning",
+    "year": 2022,
+    "doi": "https://doi.org/10.1007/978-981-19-3927-3_46",
+    "authors": [
+      "Fei Long"
+    ],
+    "venue": "Lecture notes in electrical engineering",
+    "openalex": "https://openalex.org/W4285198380"
+  },
+  {
+    "title": "PA-Cache: Evolving Learning-Based Popularity- Aware Content Caching in Edge Networks",
+    "year": 2021,
+    "doi": "https://doi.org/10.1109/tnsm.2021.3053645",
+    "authors": [
+      "Qilin Fan",
+      "Xiuhua Li",
+      "Jian Li",
+      "Qiang He",
+      "Kai Wang",
+      "Junhao Wen"
+    ],
+    "venue": "IEEE Transactions on Network and Service Management",
+    "openalex": "https://openalex.org/W3124556566"
+  },
+  {
+    "title": "ACIC: Admission-Controlled Instruction Cache",
+    "year": 2023,
+    "doi": "https://doi.org/10.1109/hpca56546.2023.10071033",
+    "authors": [
+      "Yunjin Wang",
+      "Chia-Hao Chang",
+      "Anand Sivasubramaniam",
+      "Niranjan Kumar Soundararajan"
+    ],
+    "venue": "Proceedings - International Symposium on High-Performance Computer Architecture/Proceedings",
+    "openalex": "https://openalex.org/W4360832442"
+  },
+  {
+    "title": "An End-to-End Automatic Cache Replacement Policy Using Deep Reinforcement Learning",
+    "year": 2022,
+    "doi": "https://doi.org/10.1609/icaps.v32i1.19840",
+    "authors": [
+      "Zhou Yang",
+      "Fang Wang",
+      "Zhan Shi",
+      "Dan Feng"
+    ],
+    "venue": "Proceedings of the International Conference on Automated Planning and Scheduling",
+    "openalex": "https://openalex.org/W4312848500"
+  },
+  {
+    "title": "Learning from optimal caching for content delivery",
+    "year": 2021,
+    "doi": "https://doi.org/10.1145/3485983.3494855",
+    "authors": [
+      "Gang Yan",
+      "Jian Li",
+      "Don Towsley"
+    ],
+    "venue": "ACM International Conference on emerging Networking EXperiments and Technologies (CoNEXT)",
+    "openalex": "https://openalex.org/W3217093116"
+  },
+  {
+    "title": "Efficient Federated DRL-Based Cooperative Caching for Mobile Edge Networks",
+    "year": 2022,
+    "doi": "https://doi.org/10.1109/tnsm.2022.3198074",
+    "authors": [
+      "Aleteng Tian",
+      "Bohao Feng",
+      "Huachun Zhou",
+      "Yunxue Huang",
+      "Keshav Sood",
+      "Shui Yu",
+      "Hongke Zhang"
+    ],
+    "venue": "IEEE Transactions on Network and Service Management",
+    "openalex": "https://openalex.org/W4290993925"
+  },
+  {
+    "title": "Darwin: Flexible Learning-based CDN Caching",
+    "year": 2023,
+    "doi": "https://doi.org/10.1145/3603269.3604863",
+    "authors": [
+      "J.K. Chen",
+      "Nihal Sharma",
+      "Tarannum Khan",
+      "Shu Liu",
+      "Brian Chang",
+      "Aditya Akella",
+      "Sanjay Shakkottai",
+      "Ramesh K. Sitaraman"
+    ],
+    "venue": "ACM SIGCOMM Conference (SIGCOMM)",
+    "openalex": "https://openalex.org/W4386396579"
+  },
+  {
+    "title": "To Cache or Not to Cache",
+    "year": 2024,
+    "doi": "https://doi.org/10.3390/a17070301",
+    "authors": [
+      "Steven Lyons",
+      "Raju Rangaswami"
+    ],
+    "venue": "Algorithms",
+    "openalex": "https://openalex.org/W4400420389"
+  },
+  {
+    "title": "CacheSack: Theory and Experience of Google’s Admission Optimization for Datacenter Flash Caches",
+    "year": 2023,
+    "doi": "https://doi.org/10.1145/3582014",
+    "authors": [
+      "Tzu-Wei Yang",
+      "Seth Pollen",
+      "Mustafa Uysal",
+      "Arif Merchant",
+      "Homer Wolfmeister",
+      "Junaid Khalid"
+    ],
+    "venue": "ACM Transactions on Storage",
+    "openalex": "https://openalex.org/W4317659274"
+  },
+  {
+    "title": "A Learning-Based Caching Mechanism for Edge Content Delivery",
+    "year": 2024,
+    "doi": "https://doi.org/10.1145/3629526.3645037",
+    "authors": [
+      "Hoda Torabi",
+      "Hamzeh Khazaei",
+      "Marin Litoiu"
+    ],
+    "venue": "ACM/SPEC International Conference on Performance Engineering (ICPE)",
+    "openalex": "https://openalex.org/W4391634998"
+  },
+  {
+    "title": "FrozenHot Cache: Rethinking Cache Management for Modern Hardware",
+    "year": 2023,
+    "doi": "https://doi.org/10.1145/3552326.3587446",
+    "authors": [
+      "Ziyue Qiu",
+      "Juncheng Yang",
+      "Juncheng Zhang",
+      "Cheng Li",
+      "Xiaosong Ma",
+      "Qi Chen",
+      "Mao Yang",
+      "Yinlong Xu"
+    ],
+    "venue": "",
+    "openalex": "https://openalex.org/W4372260792"
+  },
+  {
+    "title": "Learning-Augmented Online Caching: New Upper Bounds",
+    "year": 2024,
+    "doi": "https://doi.org/10.48550/arxiv.2410.01760",
+    "authors": [
+      "Daniel Skachkov",
+      "Denis K. Ponomaryov",
+      "Yuri Dorn",
+      "Alexander V. Demin"
+    ],
+    "venue": "arXiv (Cornell University)",
+    "openalex": "https://openalex.org/W4403852110"
+  },
+  {
+    "title": "SLAP: Segmented Reuse-Time-Label Based Admission Policy for Content Delivery Network Caching",
+    "year": 2024,
+    "doi": "https://doi.org/10.1145/3646550",
+    "authors": [
+      "Ke Liu",
+      "Kan Wu",
+      "Hua Wang",
+      "Ke Zhou",
+      "Peng Wang",
+      "Ji Zhang",
+      "Cong Li"
+    ],
+    "venue": "ACM Transactions on Architecture and Code Optimization",
+    "openalex": "https://openalex.org/W4391680354"
+  },
+  {
+    "title": "Multi-Agent Deep-Q Network-Based Cache Replacement Policy for Content Delivery Networks",
+    "year": 2024,
+    "doi": "https://doi.org/10.3390/fi16080292",
+    "authors": [
+      "Janith Kavindu Dassanayake",
+      "Minxiao Wang",
+      "Muhammad Zia Hameed",
+      "Ning Yang"
+    ],
+    "venue": "Future Internet",
+    "openalex": "https://openalex.org/W4401590303"
+  },
+  {
+    "title": "Federated Learning-Based Service Caching in Multi-Access Edge Computing System",
+    "year": 2024,
+    "doi": "https://doi.org/10.3390/app14010401",
+    "authors": [
+      "Tuan Phong Tran",
+      "Anh Hung Ngoc Tran",
+      "Thuan Minh Nguyen",
+      "Myungsik Yoo"
+    ],
+    "venue": "Applied Sciences",
+    "openalex": "https://openalex.org/W4390479478"
+  },
+  {
+    "title": "RCM: A Remote Cache Management Framework for Spark",
+    "year": 2022,
+    "doi": "https://doi.org/10.3390/app122211491",
+    "authors": [
+      "Yixin Song",
+      "Junyang Yu",
+      "Bohan Li",
+      "Han Li",
+      "Xin He",
+      "Jinjiang Wang",
+      "Rui Zhai"
+    ],
+    "venue": "Applied Sciences",
+    "openalex": "https://openalex.org/W4309007950"
+  },
+  {
+    "title": "Frozen Cache: Mitigating Filter Effect and Redundancy for Network of Caches",
+    "year": 2021,
+    "doi": "https://doi.org/10.1109/access.2021.3111220",
+    "authors": [
+      "Saeid Montazeri Shahtouri",
+      "Mostafa Rezazad",
+      "Richard T. B. Ma"
+    ],
+    "venue": "IEEE Access",
+    "openalex": "https://openalex.org/W3201288640"
+  },
+  {
+    "title": "Learning-Augmented Heuristics: Simple, yet Smart, Robust and Interpretable Cache Eviction",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2608.27975",
+    "authors": [
+      "Haocheng Xia",
+      "William Nixon",
+      "Bintang Dwi Marthen",
+      "Pranav Bhandari",
+      "Juncheng Yang"
+    ],
+    "venue": "arXiv (Cornell University)",
+    "openalex": "https://openalex.org/W7204755998"
+  },
+  {
+    "title": "Cocktail Edge Caching: Ride Dynamic Trends of Content Popularity with Ensemble Learning",
+    "year": 2021,
+    "doi": "https://doi.org/10.48550/arxiv.2101.05885",
+    "authors": [
+      "Tongyu Zong",
+      "Chen Li",
+      "Yuanyuan Lei",
+      "Guangyu Li",
+      "Houwei Cao",
+      "Yong Liu"
+    ],
+    "venue": "arXiv (Cornell University)",
+    "openalex": "https://openalex.org/W4293241698"
+  },
+  {
+    "title": "Similarity Caching: Theory and Algorithms",
+    "year": 2021,
+    "doi": "https://doi.org/10.1109/tnet.2021.3126368",
+    "authors": [
+      "Giovanni Neglia",
+      "Michele Garetto",
+      "Emilio Leonardi"
+    ],
+    "venue": "IEEE/ACM Transactions on Networking",
+    "openalex": "https://openalex.org/W4206826798"
+  },
+  {
+    "title": "Reinforcement Learning Based Approaches to Adaptive Context Caching in Distributed Context Management Systems",
+    "year": 2022,
+    "doi": "https://doi.org/10.48550/arxiv.2212.11709",
+    "authors": [
+      "Shakthi Weerasinghe",
+      "Arkady Zaslavsky",
+      "Seng W. Loke",
+      "Amin Abken",
+      "Alireza Hassani"
+    ],
+    "venue": "arXiv (Cornell University)",
+    "openalex": "https://openalex.org/W4320855502"
+  }
+]

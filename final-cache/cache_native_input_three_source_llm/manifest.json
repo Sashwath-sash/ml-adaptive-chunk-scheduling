@@ -1,0 +1,14 @@
+{
+  "trace_url": "https://github.com/landigf/BrowseTrace",
+  "trace_sha256": "4d43e831182cb554c2880aa9a2fc92bb2bac5ac34299e0ec382812a25d94f5a1",
+  "source_model_results": "results_cache_three_source_v1",
+  "test_requests": 71557,
+  "unique_keys": 5106,
+  "partition": "final 20% held-out split",
+  "shard_count": 1,
+  "shard_index": 0,
+  "model_stages": 100,
+  "capacity": 512,
+  "threshold_chosen_on_validation": 0.2,
+  "note": "URL keys become deterministic 4-KiB backing blocks; original web bodies are not available"
+}

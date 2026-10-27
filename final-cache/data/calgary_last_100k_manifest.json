@@ -1,0 +1,9 @@
+{
+  "source_url": "https://ita.ee.lbl.gov/html/contrib/Calgary-HTTP.html",
+  "source_sha256": "273a2ad7acdd5fbbc3537d2ebd230954423736f01fabfcbe97f0bf70cfed26d9",
+  "matched_get_200_requests": 565495,
+  "selected_last_requests": 100000,
+  "derived_sha256": "452899d85ce5e8b0bb09e3747c82ea29c1561072f3e7b6ce96ba9318cc89b407",
+  "selection": "last 100000 valid GET 200 requests, original order",
+  "note": "Different server from training; filenames anonymized at source; excluded from model training/selection."
+}
